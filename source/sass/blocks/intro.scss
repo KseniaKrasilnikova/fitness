@@ -1,0 +1,66 @@
+.intro {
+  min-height: 658px;
+  background-color: #1b2948;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-gradient@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-gradient@2x.png");
+      }
+    }
+
+  @media (max-width: $tablet-width-only) {
+    background-image: url("../img/bg-gradient-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-gradient-tablet@2x.png");
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../img/bg-gradient-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-gradient-mobile@2x.png");
+    }
+  }
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 52px;
+}
+
+.intro__info {
+  flex-grow: 1.64;
+  background-color: #102654;
+}
+
+.intro__pic {
+  background-color: #141f40;
+
+  @media (min-width: $desktop-width) {
+    max-height: 556px;
+  }
+
+    @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.intro__pic img {
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    height: auto;  }
+}
+
+.intro__socials {
+  flex-grow: 1;
+  background-color: #175410;
+}
