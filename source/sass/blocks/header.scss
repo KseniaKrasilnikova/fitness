@@ -16,6 +16,11 @@
   letter-spacing: 0.03em;
 
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    opacity: 70%;
+  }
 }
 
 .header__logo {

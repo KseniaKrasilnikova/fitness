@@ -5,6 +5,8 @@
   background-size: cover;
   height: auto;
 
+  color: white;
+
     @media (min-width: $desktop-width) {
       background-image: url("../img/bg-gradient@1x.png");
 
@@ -38,8 +40,75 @@
 }
 
 .intro__info {
-  flex-grow: 1.64;
-  background-color: #102654;
+  position: relative;
+  flex-grow: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  padding: 112px 64px 39px 0;
+
+  & h3 {
+    max-width: 298px;
+    margin: 0;
+
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-size: 109px;
+    line-height: 109px;
+    text-align: right;
+    letter-spacing: 0.03em;
+    -webkit-text-stroke: 2px #ffffff;
+    text-transform: uppercase;
+  }
+
+  & p {
+    max-width: 298px;
+    margin: 0;
+
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 59px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  & ul {
+    position: absolute;
+    left: 20px;
+    top: 55%;
+    margin: 0;
+    padding: 0;
+    max-width: 130px;
+
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    list-style-type: none;
+  }
+}
+
+.intro__subscribe-link {
+  max-width: 230px;
+  padding: 19px 56px;
+  margin-top: 42px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: 0.03em;
+  color: white;
+  text-transform: uppercase;
+
+  border: 4px solid #ffffff;
+
+  &:hover,
+  &:focus {
+    color: $darkColor;
+    border: 4px solid #ffffff;
+    background-color: white;
+  }
 }
 
 .intro__pic {
