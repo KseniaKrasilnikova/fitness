@@ -4,6 +4,10 @@
   @media (max-width: $tablet-width-only) {
     margin: 0  5.8%;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 4.7%;
+  }
 }
 
 .page-wrapper {
