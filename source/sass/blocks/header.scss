@@ -6,13 +6,16 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
+  width: 84.8%;
 
   @media (max-width: $tablet-width-only) {
     margin-top: 40px;
+    width: 88.4%;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-top: 20px;
+    width: 90.6%;
   }
 }
 
