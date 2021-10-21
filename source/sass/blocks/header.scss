@@ -5,6 +5,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 40px;
+  }
 }
 
 .header__link {
@@ -21,4 +25,9 @@
   &:focus {
     opacity: 70%;
   }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;  }
 }

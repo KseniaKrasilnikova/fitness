@@ -1,6 +1,9 @@
 .container {
-  //height: inherit;
   margin: 0  7.6%;
+
+  @media (max-width: $tablet-width-only) {
+    margin: 0  5.8%;
+  }
 }
 
 .page-wrapper {
