@@ -1,6 +1,10 @@
 .quick-form {
+  display: flex;
   flex-grow: 1;
   flex-basis: 683px;
+  padding: 63px 0 62px;
+  box-sizing: border-box;
+
   background-color: $darkColor;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -15,5 +19,17 @@
 .quick-form__content {
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin: 0 17.3%;
+  }
+
+  & h3 {
+    margin: 0 0 40px 52px;
+
+    font-family: "Bebas Neue", "Arial", sans-serif;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+
+    color: #FFFFFF;
   }
 }
