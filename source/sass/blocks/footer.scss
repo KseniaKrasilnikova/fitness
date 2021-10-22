@@ -4,6 +4,14 @@
   min-height: 108px;
   background-color: #030a1a;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 114px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 260px;
+  }
 }
 
 .footer__logo {
