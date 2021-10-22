@@ -5,7 +5,7 @@
   box-sizing: border-box;
   display: flex;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 351px;
     display: flex;
     justify-content: center;
@@ -16,14 +16,14 @@
   }
 
   & h2 {
-    margin: 0 0 34px 0;
+    margin: 0 0 40px 69px;
 
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin: 0 0 32px 0;
 
       font-size: 42px;
@@ -71,14 +71,28 @@
   position: relative;
   flex-direction: row;
   flex-wrap: nowrap;
+  min-width: 450px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 69px;
+  }
 
   @media (min-width: $tablet-width) {
     column-count: 2;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-width: 515px;
   }
 
   & p {
-    padding-bottom: 20px;
+    @media (min-width: $desktop-width) {
+      padding-bottom: 15px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      padding-bottom: 20px;
+    }
   }
 
   & div:last-child > p {
@@ -98,7 +112,7 @@
   position: absolute;
   content: "";
   background-color: $darkColor;
-  width: 2px;
+  width: 1px;
   height: 100%;
 
   @media (max-width: $mobile-width-only) {
@@ -107,7 +121,11 @@
 }
 
 .contacts__divider div {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-left: 48px;
   }
 }

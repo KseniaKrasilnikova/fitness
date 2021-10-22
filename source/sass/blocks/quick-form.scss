@@ -3,7 +3,7 @@
   flex-basis: 683px;
   background-color: $darkColor;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 324px;
   }
 
