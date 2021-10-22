@@ -1,11 +1,14 @@
 .contacts {
   flex-grow: 1;
   flex-basis: 683px;
-  padding: 70px 0;
+  padding: 70px 0 62px;
   box-sizing: border-box;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     flex-basis: 351px;
+    display: flex;
+    justify-content: center;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -13,7 +16,7 @@
   }
 
   & h2 {
-    margin: 0;
+    margin: 0 0 34px 0;
 
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
@@ -21,6 +24,8 @@
     letter-spacing: 0.03em;
 
     @media (min-width: $tablet-width) {
+      margin: 0 0 32px 0;
+
       font-size: 42px;
       line-height: 42px;
     }
@@ -32,7 +37,7 @@
   }
 
   & h3 {
-    margin: 0;
+    margin: 0 0 5px 0;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
@@ -69,6 +74,23 @@
 
   @media (min-width: $tablet-width) {
     column-count: 2;
+    min-width: 515px;
+  }
+
+  & p {
+    padding-bottom: 20px;
+  }
+
+  & div:last-child > p {
+    padding: 0;
+  }
+}
+
+.contacts__columns-section {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
@@ -84,7 +106,17 @@
   }
 }
 
+.contacts__divider div {
+  @media (min-width: $tablet-width) {
+    margin-left: 48px;
+  }
+}
+
 .contacts__content {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    max-width: 502px;
+  }
 }

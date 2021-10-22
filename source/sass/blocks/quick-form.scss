@@ -11,3 +11,9 @@
     flex-basis: 386px;
   }
 }
+
+.quick-form__content {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin: 0 17.3%;
+  }
+}
