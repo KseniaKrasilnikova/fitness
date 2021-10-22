@@ -1,6 +1,16 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 683px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 351px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-basis: 507px;
+  }
 
   & h2 {
     margin: 0;
