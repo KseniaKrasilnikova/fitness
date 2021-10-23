@@ -31,6 +31,7 @@
     }
 
     @media (max-width: $mobile-width-only) {
+      margin: 0 0 34px 0;
       font-size: 32px;
       line-height: 32px;
     }
@@ -71,7 +72,6 @@
   position: relative;
   flex-direction: row;
   flex-wrap: nowrap;
-  min-width: 450px;
 
   @media (min-width: $desktop-width) {
     margin-left: 69px;
@@ -79,6 +79,7 @@
 
   @media (min-width: $tablet-width) {
     column-count: 2;
+    min-width: 450px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -91,6 +92,10 @@
     }
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: $mobile-width-only) {
       padding-bottom: 20px;
     }
   }
