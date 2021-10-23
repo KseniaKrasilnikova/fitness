@@ -15,7 +15,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  color: $darkColor;
+  color: $secondaryColor;
   text-transform: none;
 
   background-color: #ffffff;
@@ -36,4 +36,84 @@ img {
   height: 1px;
   margin: -1px;
   font-size: 0;
+}
+
+h2 {
+  font-family: "Bebas Neue","Arial",sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: .03em;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.gym {
+  min-height: 756px;
+  background-color: #fad7d7;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 856px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 925px;
+  }
+}
+
+.subscriptions {
+  min-height: 851px;
+  background-color: #F8F9FC;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 1779px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 1487px;
+  }
+}
+.application {
+  min-height: 620px;
+  background-color: #b7f3b3;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 392px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 654px;
+  }
+}
+.trainers {
+  min-height: 633px;
+  background-color: #a7b1f1;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 576px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 488px;
+  }
+}
+.features {
+  min-height: 664px;
+  background-color: #F8F9FC;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 755px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 1231px;
+  }
+}
+.promo {
+  min-height: 681px;
+  background-color: #a2e3e5;
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 885px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 1224px;
+  }
 }

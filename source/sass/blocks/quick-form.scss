@@ -6,7 +6,7 @@
   box-sizing: border-box;
 
   color: #FFFFFF;
-  background-color: $darkColor;
+  background-color: $secondaryColor;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 324px;
@@ -107,8 +107,8 @@
     font-size: 14px;
     line-height: 16px;
     color: #fff;
-    background-color: $darkColor;
-    border: 1px solid $darkColor;
+    background-color: $secondaryColor;
+    border: 1px solid $secondaryColor;
     border-bottom: 1px solid #74819C;
 
     &::placeholder {

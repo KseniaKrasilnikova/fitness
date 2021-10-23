@@ -1,3 +1,123 @@
 .reviews {
   min-height: 494px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 120px 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 70px 0;
+  }
+
+
+  h2 {
+    align-self: center;
+    margin: 0 0 50px;
+
+    @media (max-width: $tablet-width-only) {
+      margin: 0 0 40px;
+    }
+  }
+
+  .view-pager {
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background-color: $primaryColor;
+  max-width: 560px;
+  margin: 0 40px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 22px;
+  }
+}
+
+div.prev,
+div.next {
+  width: 16px;
+  height: 32px;
+  background-color: red;
+
+  @media (max-width: $mobile-width-only) {
+    width: 10px;
+    height: 19px;
+  }
+}
+
+.slide {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #FFFFFF;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 40px 25px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .slide-pic {
+    justify-self: start;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+
+      @media (max-width: $mobile-width-only) {
+        height: 68px;
+        width: 68px;
+      }
+    }
+
+    @media (max-width: $mobile-width-only) {
+      justify-self: end;
+      height: 68px;
+      width: 68px;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+
+    @media (max-width: $mobile-width-only) {
+      align-self: center;
+      margin: 0 0 0 10px;
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+    @media (max-width: $mobile-width-only) {
+      text-align: center;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+    }
+  }
 }

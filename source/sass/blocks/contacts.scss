@@ -18,22 +18,12 @@
   & h2 {
     margin: 0 0 40px 69px;
 
-    font-family: "Bebas Neue", "Arial", sans-serif;
-    font-size: 49px;
-    line-height: 49px;
-    letter-spacing: 0.03em;
-
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin: 0 0 32px 0;
-
-      font-size: 42px;
-      line-height: 42px;
     }
 
     @media (max-width: $mobile-width-only) {
       margin: 0 0 34px 0;
-      font-size: 32px;
-      line-height: 32px;
     }
   }
 
@@ -116,7 +106,7 @@
 .contacts__divider::before {
   position: absolute;
   content: "";
-  background-color: $darkColor;
+  background-color: $secondaryColor;
   width: 1px;
   height: 100%;
 

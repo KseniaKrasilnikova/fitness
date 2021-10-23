@@ -16,144 +16,176 @@
   <include src="build/img/sprite_auto.svg"></include>
 </div>
 <div class="page-wrapper">
-<header class="header container">
-  <div>
-  <a class="company-logo">
-    <picture>
-      <source type="image/webp" media="(min-width: 1200px)"
-        srcset="img/supergym-logo@1x.webp 1x, img/supergym-logo@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)"
-        srcset="img/supergym-logo-tablet@1x.webp 1x, img/supergym-logo-tablet@2x.webp 2x">
-      <source type="image/webp"
-        srcset="img/supergym-logo-mobile@1x.webp 1x, img/supergym-logo-mobile@2x.webp 2x">
-      <!-- 1х: 87px; 2x: 173px -->
-      <source media="(min-width: 1200px)"
-        srcset="img/supergym-logo@1x.png 1x, img/supergym-logo@2x.png 2x">
-      <!-- 1х: 80px; 2x: 159px -->
-      <source media="(min-width: 768px)"
-        srcset="img/supergym-logo-tablet@1x.png 1x, img/supergym-logo-tablet@2x.png 2x">
-      <!-- 1х: 67px; 2x: 134px -->
-      <img src="img/supergym-logo-mobile@1x.png" srcset="img/supergym-logo-mobile@2x.png 2x" alt="Логотип компании Supergym" width="67"
-        height="16">
-    </picture>
-  </a>
-  </div>
-  <div>
-    <a href="tel:+7(800)5555555" class="header__link">8-800-555-55-55</a>
-  </div>
-</header>
-<main class="main">
-  <h1 class="visually-hidden">Фитнес-центр в Омске ждет всех желающих</h1>
-  <section class="intro">
-    <h2 class="visually-hidden">Фитнес-центр</h2>
-    <div class="container intro__content">
-      <div class="intro__info">
-        <p>Омск</p>
-        <div class="intro__text">
-          <div></div>
-          <div class="intro__title-start">
-            <h3>Фитнес</h3>
-          </div>
-          <div class="intro__list">
-            <ul>
-              <li>Тренажерный зал</li>
-              <li>Групповые занятия</li>
-              <li>Кардио-зона</li>
-            </ul>
-          </div>
-          <div class="intro__title-end">
-            <h3>центр</h3>
-          </div>
-          </div>
-        <a href="#subscription" class="intro__subscribe-link">Купить абонемент</a>
-      </div>
-      <div class="intro__pic">
+  <header class="header container">
+    <div>
+      <a class="company-logo">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
-          <source type="image/webp" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
-          <!-- 1х: 500px; 2x: 1000px -->
-          <source media="(min-width: 1200px)" srcset="img/hero@1x.jpg 1x, img/hero@2x.jpg 2x">
-          <!-- 1х: 324px; 2x: 648px -->
-          <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен"
-            width="324" height="390">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/supergym-logo@1x.webp 1x, img/supergym-logo@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/supergym-logo-tablet@1x.webp 1x, img/supergym-logo-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/supergym-logo-mobile@1x.webp 1x, img/supergym-logo-mobile@2x.webp 2x">
+          <!-- 1х: 87px; 2x: 173px -->
+          <source media="(min-width: 1200px)"
+            srcset="img/supergym-logo@1x.png 1x, img/supergym-logo@2x.png 2x">
+          <!-- 1х: 80px; 2x: 159px -->
+          <source media="(min-width: 768px)"
+            srcset="img/supergym-logo-tablet@1x.png 1x, img/supergym-logo-tablet@2x.png 2x">
+          <!-- 1х: 67px; 2x: 134px -->
+          <img src="img/supergym-logo-mobile@1x.png" srcset="img/supergym-logo-mobile@2x.png 2x"
+            alt="Логотип компании Supergym" width="67"
+            height="16">
         </picture>
-      </div>
-      <div class="intro__socials">
-        <ul>
-          <li>
-            <a href="#" class="intro__socials-link">fb</a>
-          </li>
-          <li>
-            <a href="#" class="intro__socials-link">vk</a>
-          </li>
-          <li>
-            <a href="#" class="intro__socials-link">ig</a>
-          </li>
-        </ul>
-      </div>
+      </a>
     </div>
-  </section>
-
-  <section class="reviews">
-
-  </section>
-
-  <div class="sections-wrapper">
-    <section class="quick-form">
-      <h2 class="visually-hidden">Записаться на бесплатное занятие в Supergym</h2>
-      <div class="container">
-        <form class="form quick-form__content" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data"
-          autocomplete="off" autocapitalize="off">
-          <h3>Бесплатное занятие</h3>
-          <div class="form__required quick-form__required">
-            <label for="name">
-              <span class="form__comment visually-hidden" id="name-error">Данные не верны</span>
-              <input id="name" type="text" placeholder="Имя" name="name">
-            </label>
-            <label for="phone">
-              <span class="form__comment visually-hidden" id="phone-error">Данные не верны</span>
-              <input id="phone" type="tel" placeholder="Телефон" name="phone" minlength="17" maxlength="17">
-            </label>
+    <div>
+      <a href="tel:+7(800)5555555" class="header__link">8-800-555-55-55</a>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Фитнес-центр в Омске ждет всех желающих</h1>
+    <section class="intro">
+      <h2 class="visually-hidden">Фитнес-центр</h2>
+      <div class="container intro__content">
+        <div class="intro__info">
+          <p>Омск</p>
+          <div class="intro__text">
+            <div></div>
+            <div class="intro__title-start">
+              <h3>Фитнес</h3>
+            </div>
+            <div class="intro__list">
+              <ul>
+                <li>Тренажерный зал</li>
+                <li>Групповые занятия</li>
+                <li>Кардио-зона</li>
+              </ul>
+            </div>
+            <div class="intro__title-end">
+              <h3>центр</h3>
+            </div>
           </div>
-          <div class="form__submit quick-form__submit">
-            <input id="form-submit" type="submit" value="Отправить" >
-          </div>
-
-
-        </form>
+          <a href="#subscription" class="intro__subscribe-link">Купить абонемент</a>
+        </div>
+        <div class="intro__pic">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
+            <source type="image/webp" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
+            <!-- 1х: 500px; 2x: 1000px -->
+            <source media="(min-width: 1200px)" srcset="img/hero@1x.jpg 1x, img/hero@2x.jpg 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен"
+              width="324" height="390">
+          </picture>
+        </div>
+        <div class="intro__socials">
+          <ul>
+            <li>
+              <a href="#" class="intro__socials-link">fb</a>
+            </li>
+            <li>
+              <a href="#" class="intro__socials-link">vk</a>
+            </li>
+            <li>
+              <a href="#" class="intro__socials-link">ig</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
-  <section class="contacts">
-    <div class="container contacts__content">
-    <h2>Контакты</h2>
-    <div class="contacts__columns">
-      <div>
-        <div>
-        <h3>Адрес:</h3>
-        <p>г. Омск, ул. 60 лет Октября, 7</p>
-      </div>
-        <div class="contacts__columns-section">
-        <h3>График работы:</h3>
-        <p>Пн-Вс: с 8:00 до 22:00</p>
-      </div>
-      </div>
+    <section class="gym">gym</section>
+    <section class="subscriptions">subscriptions</section>
+    <section class="application">application</section>
+    <section class="trainers">trainers</section>
+    <section class="features">features</section>
+    <section class="promo">promo</section>
 
-      <div class="contacts__divider">
-        <div>
-        <h3>Телефон:</h3>
-        <p>8-800-555-55-55</p>
+    <section class="reviews container">
+      <h2 class="section-title">Отзывы</h2>
+      <div class="view-pager">
+        <div class="prev"></div>
+        <div class="page">
+          <div class="slide">
+            <div class="slide-pic">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
+                <!-- 1х: 500px; 2x: 1000px -->
+                <source media="(min-width: 1200px)" srcset="img/hero@1x.jpg 1x, img/hero@2x.jpg 2x">
+                <!-- 1х: 324px; 2x: 648px -->
+                <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен"
+                  width="80" height="80">
+              </picture>
+            </div>
+
+            <h3>Анна Орлова</h3>
+            <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
+              дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </div>
+        </div>
+        <div class="next"></div>
       </div>
-        <div>
-        <h3>Email:</h3>
-        <p>omsk@supergym.ru</p>
-      </div>
-      </div>
+    </section>
+
+    <div class="sections-wrapper">
+      <section class="quick-form">
+        <h2 class="visually-hidden">Записаться на бесплатное занятие в Supergym</h2>
+        <div class="container">
+          <form class="form quick-form__content" action="https://echo.htmlacademy.ru" method="post"
+            enctype="multipart/form-data"
+            autocomplete="off" autocapitalize="off">
+            <h3>Бесплатное занятие</h3>
+            <div class="form__required quick-form__required">
+              <label for="name">
+                <span class="form__comment visually-hidden" id="name-error">Данные не верны</span>
+                <input id="name" type="text" placeholder="Имя" name="name">
+              </label>
+              <label for="phone">
+                <span class="form__comment visually-hidden" id="phone-error">Данные не верны</span>
+                <input id="phone" type="tel" placeholder="Телефон" name="phone" minlength="17" maxlength="17">
+              </label>
+            </div>
+            <div class="form__submit quick-form__submit">
+              <input id="form-submit" type="submit" value="Отправить">
+            </div>
+
+
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container contacts__content">
+          <h2 class="section-title">Контакты</h2>
+          <div class="contacts__columns">
+            <div>
+              <div>
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="contacts__columns-section">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+            </div>
+
+            <div class="contacts__divider">
+              <div>
+                <h3>Телефон:</h3>
+                <p>8-800-555-55-55</p>
+              </div>
+              <div>
+                <h3>Email:</h3>
+                <p>omsk@supergym.ru</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    </div>
-  </section>
-  </div>
-</main>
+  </main>
   <footer class="footer">
     <div class="container footer__content">
       <div class="footer__logo">
@@ -172,7 +204,8 @@
             <source media="(min-width: 768px)"
               srcset="img/supergym-logo-tablet@1x.png 1x, img/supergym-logo-tablet@2x.png 2x">
             <!-- 1х: 67px; 2x: 134px -->
-            <img src="img/supergym-logo-mobile@1x.png" srcset="img/supergym-logo-mobile@2x.png 2x" alt="Логотип компании Supergym" width="67"
+            <img src="img/supergym-logo-mobile@1x.png" srcset="img/supergym-logo-mobile@2x.png 2x"
+              alt="Логотип компании Supergym" width="67"
               height="16">
           </picture>
         </a>
@@ -181,23 +214,24 @@
         <ul>
           <li>
             <a class="company-logo footer__mobile-size-logo">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/supergym-logo@1x.webp 1x, img/supergym-logo@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/supergym-logo-tablet@1x.webp 1x, img/supergym-logo-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/supergym-logo-mobile@1x.webp 1x, img/supergym-logo-mobile@2x.webp 2x">
-              <!-- 1х: 87px; 2x: 173px -->
-              <source media="(min-width: 1200px)"
-                srcset="img/supergym-logo@1x.png 1x, img/supergym-logo@2x.png 2x">
-              <!-- 1х: 80px; 2x: 159px -->
-              <source media="(min-width: 768px)"
-                srcset="img/supergym-logo-tablet@1x.png 1x, img/supergym-logo-tablet@2x.png 2x">
-              <!-- 1х: 67px; 2x: 134px -->
-              <img src="img/supergym-logo-mobile@1x.png" srcset="img/supergym-logo-mobile@2x.png 2x" alt="Логотип компании Supergym" width="67"
-                height="16">
-            </picture>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/supergym-logo@1x.webp 1x, img/supergym-logo@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/supergym-logo-tablet@1x.webp 1x, img/supergym-logo-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/supergym-logo-mobile@1x.webp 1x, img/supergym-logo-mobile@2x.webp 2x">
+                <!-- 1х: 87px; 2x: 173px -->
+                <source media="(min-width: 1200px)"
+                  srcset="img/supergym-logo@1x.png 1x, img/supergym-logo@2x.png 2x">
+                <!-- 1х: 80px; 2x: 159px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/supergym-logo-tablet@1x.png 1x, img/supergym-logo-tablet@2x.png 2x">
+                <!-- 1х: 67px; 2x: 134px -->
+                <img src="img/supergym-logo-mobile@1x.png" srcset="img/supergym-logo-mobile@2x.png 2x"
+                  alt="Логотип компании Supergym" width="67"
+                  height="16">
+              </picture>
             </a>
           </li>
           <li><a href="#">Услуги</a></li>
