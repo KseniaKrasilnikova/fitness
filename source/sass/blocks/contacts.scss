@@ -15,7 +15,7 @@
     flex-basis: 507px;
   }
 
-  & h2 {
+  h2 {
     margin: 0 0 40px 69px;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -27,7 +27,7 @@
     }
   }
 
-  & h3 {
+  h3 {
     margin: 0 0 5px 0;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -42,7 +42,7 @@
     }
   }
 
-  & p {
+  p {
     margin: 0;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -76,7 +76,7 @@
     min-width: 515px;
   }
 
-  & p {
+  p {
     @media (min-width: $desktop-width) {
       padding-bottom: 15px;
     }
@@ -90,7 +90,7 @@
     }
   }
 
-  & div:last-child > p {
+  div:last-child > p {
     padding: 0;
   }
 }

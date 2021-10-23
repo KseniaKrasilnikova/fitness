@@ -1,9 +1,9 @@
 'use strict';
 
 var setupViewPager = function () {
-  var prevButton = document.querySelector('.prev');
-  var nextButton = document.querySelector('.next');
-  var slides = document.querySelectorAll('.slide');
+  var prevButton = document.querySelector('.reviews__previous-btn');
+  var nextButton = document.querySelector('.reviews__previous-next');
+  var slides = document.querySelectorAll('.reviews__slide');
   var currentSlide = 0;
 
   prevButton.addEventListener('click', function () {

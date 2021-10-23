@@ -39,7 +39,7 @@
     min-height: 246px;
   }
 
-  & h3 {
+  h3 {
     width: 100%;
 
     font-family: "Bebas Neue", "Arial", sans-serif;
@@ -87,7 +87,7 @@
     margin: 0;
   }
 
-  & label {
+  label {
     width: 190px;
     padding-bottom: 4px;
 
@@ -96,7 +96,7 @@
     }
   }
 
-  & input {
+  input {
     width: 100%;
     padding: 7px 7px 7px 0;
     box-sizing: border-box;
@@ -127,17 +127,18 @@
   @media (max-width: $tablet-width-only) {
     margin: 0;
   }
-}
 
-.quick-form__submit input {
-  width: 410px;
-  padding: 16px 5px;
+  input {
+    cursor: pointer;
+    width: 410px;
+    padding: 16px 5px;
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    width: 472px;
-  }
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      width: 472px;
+    }
 
-  @media (max-width: $mobile-width-only) {
-    width: 100%;
+    @media (max-width: $mobile-width-only) {
+      width: 100%;
+    }
   }
 }
