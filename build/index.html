@@ -104,9 +104,9 @@
     <section class="reviews container">
       <h2 class="section-title">Отзывы</h2>
       <div class="view-pager">
-        <div class="prev"></div>
+        <div class="prev no-js"></div>
         <div class="page">
-          <div class="slide">
+          <div class="slide current">
             <div class="slide-pic">
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
@@ -122,8 +122,23 @@
             <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал
               дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
           </div>
+          <div class="slide">
+            <div class="slide-pic">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero@1x.webp 1x, img/hero@2x.webp 2x">
+                <source type="image/webp" srcset="img/hero-tablet@1x.webp 1x, img/hero-tablet@2x.webp 2x">
+                <!-- 1х: 500px; 2x: 1000px -->
+                <source media="(min-width: 1200px)" srcset="img/hero@1x.jpg 1x, img/hero@2x.jpg 2x">
+                <!-- 1х: 324px; 2x: 648px -->
+                <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен" width="80" height="80">
+              </picture>
+            </div>
+
+            <h3>Сергей Валерьевич</h3>
+            <p>«Очень крутое заведение»</p>
+          </div>
         </div>
-        <div class="next"></div>
+        <div class="next no-js"></div>
       </div>
     </section>
 
@@ -146,8 +161,6 @@
             <div class="form__submit quick-form__submit">
               <input id="form-submit" type="submit" value="Отправить">
             </div>
-
-
           </form>
         </div>
       </section>
@@ -248,5 +261,6 @@
     </div>
   </footer>
 </div>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

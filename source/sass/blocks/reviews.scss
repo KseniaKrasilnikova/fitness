@@ -26,17 +26,20 @@
 
   .view-pager {
     display: flex;
+    justify-content: center;
     align-items: center;
     align-self: center;
+    width: 100%;
   }
 }
 
 .page {
   display: flex;
   align-items: center;
-  width: fit-content;
   background-color: $primaryColor;
   max-width: 560px;
+  width: 100%;
+  min-height: 242px;
   margin: 0 40px;
 
   @media (max-width: $mobile-width-only) {
@@ -46,9 +49,14 @@
 
 div.prev,
 div.next {
+  cursor: pointer;
   width: 16px;
   height: 32px;
   background-color: red;
+
+  &.no-js {
+    display: none;
+  }
 
   @media (max-width: $mobile-width-only) {
     width: 10px;
@@ -57,10 +65,17 @@ div.next {
 }
 
 .slide {
+  width: 100%;
+  height: 100%;
   padding: 60px;
-  display: grid;
+  display: none;
+  align-self: start;
   grid-template-columns: repeat(4, 1fr);
   color: #FFFFFF;
+
+  &.current {
+    display: grid;
+  }
 
   @media (max-width: $mobile-width-only) {
     padding: 40px 25px;
