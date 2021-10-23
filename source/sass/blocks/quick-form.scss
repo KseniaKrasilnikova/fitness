@@ -5,6 +5,7 @@
   padding: 63px 0 62px;
   box-sizing: border-box;
 
+  color: #FFFFFF;
   background-color: $darkColor;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -17,12 +18,19 @@
 }
 
 .quick-form__content {
+  max-width: 410px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 204px;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin: 0 17.3%;
   }
 
   & h3 {
-    margin: 0 0 40px 52px;
+    margin: 0 0 0 52px;
+    width: 100%;
 
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
@@ -32,4 +40,48 @@
 
     color: #FFFFFF;
   }
+}
+
+.quick-form__required {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-left: 52px;
+  width: 100%;
+
+  & label {
+    width: 190px;
+    padding-bottom: 4px;
+  }
+
+  & input {
+    width: 100%;
+    padding: 7px 7px 7px 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    background-color: $darkColor;
+    border: 1px solid $darkColor;
+    border-bottom: 1px solid #74819C;
+
+    &::placeholder {
+      color: #FFFFFF;
+    }
+  }
+}
+
+.quick-form__submit {
+  margin-left: 52px;
+}
+
+.quick-form__submit input {
+  width: 410px;
+  padding: 16px 5px;
 }
