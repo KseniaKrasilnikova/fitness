@@ -37,7 +37,6 @@
   cursor: pointer;
   width: 16px;
   height: 32px;
-  background-color: red;
 
   &.no-js {
     display: none;
@@ -47,6 +46,10 @@
     width: 10px;
     height: 19px;
   }
+}
+
+.reviews__previous-next--reverse {
+  transform: rotate(180deg);
 }
 
 .reviews__page {
@@ -70,7 +73,9 @@
   display: none;
   align-self: start;
   grid-template-columns: repeat(4, 1fr);
+
   color: #FFFFFF;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 
   @media (max-width: $mobile-width-only) {
     padding: 40px 25px;
