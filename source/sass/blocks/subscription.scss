@@ -1,0 +1,231 @@
+.subscriptions {
+  background-color: #F8F9FC;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      padding: 100px 0;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding: 70px 0;
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-top: 33px;
+    height: 41px;
+    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+
+    li {
+      height: inherit;
+      cursor: pointer;
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 150%;
+      color: rgba(16, 38, 84, 0.5);
+
+      &:focus,
+      &:hover,
+      &.active {
+        border-bottom: 2px solid #D10A42;
+        color: $secondaryColor;
+      }
+
+      &:not(:first-child) {
+        margin-left: 46px;
+
+        @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+          margin-left: 54px;
+        }
+
+        @media (max-width: $mobile-width-only) {
+          margin-left: 45px;
+        }
+      }
+
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        font-size: 18px;
+      }
+
+      @media (max-width: $mobile-width-only) {
+        font-size: 16px;
+      }
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      margin-top: 28px;
+      height: 39px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin-top: 21px;
+      height: 36px;
+    }
+  }
+}
+
+.subscriptions-box {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 40px;
+  }
+
+    @media (max-width: $tablet-width-only) {
+    justify-items: center;
+    margin-top: 28px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 18px;
+    grid-row-gap: 35px;
+  }
+}
+
+.subscription-wrapper {
+  display: none;
+  min-width: 220px;
+  padding: 7px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    max-width: 442px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 428px;
+  }
+
+  &.current {
+    display: block;
+  }
+
+  a {
+    width: 204px;
+    height: 62px;
+    margin: 33px 0 60px;
+    cursor: pointer;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: $secondaryColor;
+    border: 2px solid $secondaryColor;
+
+    @media (max-width: $mobile-width-only) {
+      margin: 29px 0 47px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+
+    a {
+      color: #FFFFFF;
+      border: 2px solid transparent;
+      background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%) no-repeat;
+    }
+  }
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFFFFF;
+
+  &:hover {
+  }
+
+  h3 {
+    margin: 56px 0 0 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 29px;
+
+    color: $secondaryColor;
+
+    @media (max-width: $mobile-width-only) {
+      margin: 44px 0 0 0;
+      font-size: 22px;
+      line-height: 110.16%;
+    }
+  }
+
+  h4 {
+    margin: 10px 0 0 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #495A7D;
+  }
+
+  h5 {
+    margin: 66px 0 0 0;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 150%;
+
+    color: #103AAE;
+
+    &:after {
+      // TODO Тут можно запихать вектор если хочешь
+      content: "  ₽";
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 60px;
+      line-height: 150%;
+
+      color: $secondaryColor;
+
+      @media (max-width: $mobile-width-only) {
+        font-size: 48px;
+      }
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin: 54px 0 0 0;
+      font-size: 48px;
+    }
+  }
+}

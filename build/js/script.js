@@ -22,7 +22,40 @@ var setupViewPager = function () {
     }
     slides[currentSlide].classList.add('current');
   });
+};
 
+var setupSubscriptionTabs = function () {
+  var firstTab = document.getElementById('first-tab');
+  var secondTab = document.getElementById('second-tab');
+  var thirdTab = document.getElementById('third-tab');
+  var tabs = document.querySelectorAll('.subscriptions li');
+  var subscriptions = document.querySelectorAll('.subscription-wrapper');
+  var currentTab = 0;
+
+  firstTab.addEventListener('click', function () {
+    onTabClicked(0);
+  });
+  secondTab.addEventListener('click', function () {
+    onTabClicked(1);
+  });
+  thirdTab.addEventListener('click', function () {
+    onTabClicked(2);
+  });
+
+  var onTabClicked = function (selectedTab) {
+    if (currentTab === selectedTab) {
+      return;
+    }
+    tabs[currentTab].classList.remove('active');
+    tabs[selectedTab].classList.add('active');
+    for (var i = 0; i < subscriptions.length; i++) {
+      subscriptions[i].classList.remove('current');
+    }
+    currentTab = selectedTab;
+    for (var k = 3 * currentTab; k <= 3 * currentTab + 2; k++) {
+      subscriptions[k].classList.add('current');
+    }
+  };
 };
 
 var jsOn = function () {
@@ -90,7 +123,7 @@ var setupForm = function () {
     event.preventDefault();
     if (isFormValid()) {
       resetForm(quickFormInputs, quickFormErrors)
-      // скидываем форму и локал сторадж
+      // скидываем локал сторадж
     } else {
       event.preventDefault();
     }
@@ -150,4 +183,5 @@ quickForm.addEventListener('submit', saveFormData, true);
 setupViewPager();
 jsOn();
 setupForm();
+setupSubscriptionTabs();
 
