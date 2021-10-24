@@ -16,6 +16,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
+    justify-content: center;
     flex-basis: 388px;
     padding: 71px 0;
   }
@@ -37,6 +38,7 @@
 
   @media (max-width: $mobile-width-only) {
     min-height: 246px;
+    min-width: 290px;
   }
 
   h3 {
@@ -61,6 +63,7 @@
     }
 
     @media (max-width: $mobile-width-only) {
+      min-width: 290px;
       margin: 0;
       font-size: 32px;
       line-height: 32px;
@@ -92,7 +95,12 @@
     padding-bottom: 4px;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      width: 206px;
+      padding-bottom: 4px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding-bottom: 15px;
+      width: 290px;
     }
   }
 
@@ -117,6 +125,10 @@
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       padding: 12px 7px 6px 0;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      padding: 20px 7px 7px 0;
     }
   }
 }
