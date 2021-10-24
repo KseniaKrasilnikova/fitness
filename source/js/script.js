@@ -47,7 +47,7 @@ var setupForm = function () {
       inputElement.blur();
       errorElement.classList.add('visually-hidden');
     } else {
-      inputElement.classList.remove('form__input-invalid');
+      inputElement.classList.add('form__input-invalid');
       inputElement.blur();
       errorElement.classList.remove('visually-hidden');
     }
@@ -73,10 +73,24 @@ var setupForm = function () {
       & validatePhone(formPhone, phoneError);
   };
 
+  var resetForm = function (inputElements, errorElements) {
+    for (var i = 0; i < inputElements.length; i++) {
+      inputElements[i].value = null;
+      inputElements[i].classList.remove('form__input-invalid');
+    }
+    for (i = 0; i < errorElements.length; i++) {
+      errorElements[i].classList.add('visually-hidden');
+    }
+  };
+
+  var quickFormInputs = document.querySelectorAll('.quick-form label input');
+  var quickFormErrors = document.querySelectorAll('.quick-form .form__comment');
+
   formSubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isFormValid()) {
-      // скидываем форму и локал сторадж
+      resetForm(quickFormInputs, quickFormErrors)
+      // скидываем локал сторадж
     } else {
       event.preventDefault();
     }
