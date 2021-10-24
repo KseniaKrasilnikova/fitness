@@ -23,3 +23,20 @@
   background: 0 0;
   border: 3px solid #fff;
 }
+
+.form__required {
+  & input {
+    width: 100%;
+    box-sizing: border-box;
+
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  input.form__input-invalid {
+    border: 1px solid #ff6b26;
+  }
+}
