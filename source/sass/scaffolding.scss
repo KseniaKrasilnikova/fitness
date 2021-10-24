@@ -55,18 +55,6 @@ h2 {
   }
 }
 
-.gym {
-  min-height: 756px;
-  background-color: #fad7d7;
-
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    min-height: 856px;
-  }
-  @media (max-width: $mobile-width-only) {
-    min-height: 925px;
-  }
-}
-
 .subscriptions {
   min-height: 851px;
   background-color: #F8F9FC;
@@ -116,4 +104,8 @@ h2 {
   @media (max-width: $mobile-width-only) {
     min-height: 1224px;
   }
+}
+
+picture {
+  display: block;
 }
