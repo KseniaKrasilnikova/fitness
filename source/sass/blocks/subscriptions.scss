@@ -81,10 +81,17 @@
 
   &::after {
     position: absolute;
-    content: url("../img/weights@1x.png");
-    bottom: 0;
     right: 0;
-    height: 340px;
+
+    @media (min-width: $desktop-width) {
+      content: url("../img/weights@1x.png");
+      bottom: -155px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      content: url("../img/weights-tablet@1x.png");
+      bottom: -130px;
+    }
   }
 }
 
