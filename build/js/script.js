@@ -29,7 +29,7 @@ var setupSubscriptionTabs = function () {
   var secondTab = document.getElementById('second-tab');
   var thirdTab = document.getElementById('third-tab');
   var tabs = document.querySelectorAll('.subscriptions li');
-  var subscriptions = document.querySelectorAll('.subscription-wrapper');
+  var subscriptions = document.querySelectorAll('.subscriptions__wrapper');
   var currentTab = 0;
 
   firstTab.addEventListener('click', function () {
@@ -122,8 +122,9 @@ var setupForm = function () {
   formSubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isFormValid()) {
-      resetForm(quickFormInputs, quickFormErrors)
-      // скидываем локал сторадж
+      //saveFormData();
+      resetForm(quickFormInputs, quickFormErrors);
+      //resetFormData();
     } else {
       event.preventDefault();
     }
@@ -171,14 +172,19 @@ var setupForm = function () {
   formPhone.addEventListener('keydown', Mask, false);
 };
 
-var quickForm = document.querySelector('.quick-form__content');
+var quickFormSubmitBtn = document.querySelector('.quick-form__submit');
 
 var saveFormData = function () {
   localStorage.setItem('name', document.getElementById('name').value);
   localStorage.setItem('phone', document.getElementById('phone').value);
 };
 
-quickForm.addEventListener('submit', saveFormData, true);
+var resetFormData = function () {
+  localStorage.removeItem('name', document.getElementById('name').value);
+  localStorage.removeItem('phone', document.getElementById('phone').value);
+};
+
+quickFormSubmitBtn.addEventListener('submit', saveFormData, true);
 
 setupViewPager();
 jsOn();
