@@ -1,0 +1,96 @@
+.application {
+  min-height: 620px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 392px;
+  }
+  @media (max-width: $mobile-width-only) {
+    min-height: 654px;
+  }
+}
+
+.application__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 0;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)  {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    padding: 70px 0;
+  }
+}
+
+.application__pic {
+  display: flex;
+  flex-grow: 1;
+
+  background-color: $secondaryColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 660px;
+    min-height: 500px;
+    background-image: url("../img/super-game@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/super-game@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-basis: 386px;
+
+    min-height: 292px;
+    background-image: url("../img/super-game-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/super-game-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-basis: 292px;
+    min-height: 292px;
+    background-image: url("../img/super-game-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/super-game-mobile@2x.jpg");
+    }
+  }
+}
+
+
+.application__info {
+  display: flex;
+  flex-grow: 1;
+
+  box-sizing: border-box;
+  background-color: #ED0233;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 500px;
+    min-height: 500px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-basis: 292px;
+    min-height: 292px;
+
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-basis: 292px;
+    min-height: 292px;
+  }
+}

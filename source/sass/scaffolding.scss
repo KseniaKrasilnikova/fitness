@@ -55,16 +55,6 @@ h2 {
   }
 }
 
-.application {
-  min-height: 620px;
-  background-color: #b7f3b3;
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    min-height: 392px;
-  }
-  @media (max-width: $mobile-width-only) {
-    min-height: 654px;
-  }
-}
 .trainers {
   min-height: 633px;
   background-color: #a7b1f1;
