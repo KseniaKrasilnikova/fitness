@@ -15,12 +15,12 @@
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin-top: 28px;
-      height: 39px;
+      min-height: 39px;
     }
 
     @media (max-width: $mobile-width-only) {
       margin-top: 21px;
-      height: 36px;
+      min-height: 36px;
     }
   }
 
@@ -30,27 +30,16 @@
     max-width: 190px;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
     color: rgba(16, 38, 84, 0.5);
     cursor: pointer;
-
-    //&::after {
-    //  position: absolute;
-    //  bottom: 0;
-    //  left: 0;
-    //  content: "";
-    //  width: 100%;
-    //  height: 2px;
-    //  background-color: #D10A42;
-    //}
 
     &:focus,
     &:hover,
     &.active {
-      //border-bottom: 2px solid #D10A42;
       color: $secondaryColor;
 
       &::after {
@@ -61,6 +50,10 @@
         width: 100%;
         height: 2px;
         background-color: #D10A42;
+
+        @media (max-width: $mobile-width-only) {
+          bottom: -3px;
+        }
       }
     }
 
@@ -150,22 +143,23 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 204px;
     height: 62px;
     margin: 33px 0 60px;
-    cursor: pointer;
 
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
+    cursor: pointer;
     color: $secondaryColor;
     border: 2px solid $secondaryColor;
 
@@ -203,6 +197,7 @@
     font-weight: bold;
     font-size: 26px;
     line-height: 29px;
+    text-align: center;
 
     color: $secondaryColor;
 
@@ -213,24 +208,26 @@
     }
   }
 
-  h4 {
+  p {
     margin: 10px 0 0 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
+    text-align: center;
 
     color: #495A7D;
   }
 
-  h5 {
+  span {
     margin: 66px 0 0 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 60px;
     line-height: 150%;
+    text-align: center;
 
     color: #103AAE;
 
