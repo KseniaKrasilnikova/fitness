@@ -83,7 +83,6 @@
     margin: 40px 0 0 0;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
-    // TODO Нету такого шрифта
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
@@ -122,6 +121,10 @@
     align-items: center;
     position: absolute;
     background-color: rgba(20, 54, 122, 0.5);
+
+    .play-button {
+      cursor: pointer;
+    }
 
     .play-button, picture, img {
       width: 100px;

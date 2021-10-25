@@ -106,22 +106,56 @@
       </div>
       <div class="gym__gym-pic">
         <picture>
-          <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен"
-            width="660" height="401">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/gym@1x.webp 1x, img/gym@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
+          <!-- 1х: 660px; 2x: 1320px -->
+          <source media="(min-width: 1200px)"
+            srcset="img/gym@1x.jpg 1x, img/gym@2x.jpg 2x">
+          <!-- 1х: 678px; 2x: 1356px -->
+          <source media="(min-width: 768px)"
+            srcset="img/gym-tablet@1x.jpg 1x, img/gym-tablet@2x.jpg 2x">
+          <!-- 1х: 320px; 2x: 640px -->
+          <img src="img/gym-mobile@1x.jpg" srcset="img/gym-mobile@2x.jpg 2x" alt="Тренажерный зал"
+            width="320" height="313">
         </picture>
       </div>
       <div class="video">
         <div class="overlay">
           <div class="play-button">
             <picture>
-              <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен"
-                width="100" height="100">
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/video-btn@1x.webp 1x, img/video-btn@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/video-btn-tablet@1x.webp 1x, img/video-btn-tablet@2x.webp 2x">
+              <!-- 1х: 100px; 2x: 200px -->
+              <source media="(min-width: 1200px)"
+                srcset="img/video-btn@1x.png 1x, img/video-btn@2x.png 2x">
+              <!-- 1х: 73px; 2x: 146px -->
+              <img src="img/video-btn-tablet@1x.png" srcset="img/video-btn-tablet@2x.png 2x" alt="Смотреть видео"
+                width="73" height="73">
             </picture>
           </div>
         </div>
         <picture>
-          <img src="img/hero-tablet@1x.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен"
-            width="364" height="228">
+          <source type="image/webp" media="(min-width: 1200px)"
+            srcset="img/gym-video-preview@1x.webp 1x, img/gym-video-preview@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/gym-video-preview-tablet@1x.webp 1x, img/gym-video-preview-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/gym-video-preview-mobile@1x.webp 1x, img/gym-video-preview-mobile@2x.webp 2x">
+          <!-- 1х: 364px; 2x: 728px -->
+          <source media="(min-width: 1200px)"
+            srcset="img/gym-video-preview@1x.jpg 1x, img/gym-video-preview@2x.jpg 2x">
+          <!-- 1х: 266px; 2x: 532px -->
+          <source media="(min-width: 768px)"
+            srcset="img/gym-video-preview-tablet@1x.jpg 1x, img/gym-video-preview-tablet@2x.jpg 2x">
+          <!-- 1х: 320px; 2x: 640px -->
+          <img src="img/gym-video-preview-mobile@1x.jpg" srcset="img/gym-video-preview-mobile@2x.jpg 2x" alt="Видео тренажерного зала"
+            width="320" height="167">
         </picture>
       </div>
     </section>
@@ -134,7 +168,6 @@
           <li id="second-tab">6 месяцев</li>
           <li id="third-tab">12 месяцев</li>
         </ul>
-
         <div class="subscriptions__box">
           <div class="subscriptions__wrapper current">
             <div class="subscriptions__item subscriptions__item--coach">
@@ -160,8 +193,6 @@
               <a href="#">купить абонемент</a>
             </div>
           </div>
-
-
           <div class="subscriptions__wrapper">
             <div class="subscriptions__item subscriptions__item--coach">
               <h3>С тренером-6</h3>
@@ -186,8 +217,6 @@
               <a href="#">купить абонемент</a>
             </div>
           </div>
-
-
           <div class="subscriptions__wrapper">
             <div class="subscriptions__item subscriptions__item--coach">
               <h3>С тренером-12</h3>
