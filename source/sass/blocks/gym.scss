@@ -21,11 +21,6 @@
     margin-bottom: 70px;
   }
 
-  .gym__gym-pic {
-    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      margin-top: 40px;
-    }
-
     picture, img {
       width: 660px;
       height: 401px;
@@ -40,10 +35,9 @@
         height: 313px;
       }
     }
-  }
 }
 
-.info {
+.gym__info {
   max-width: 480px;
   box-sizing: border-box;
   padding: 49px 60px 49px 60px;
@@ -93,7 +87,7 @@
   }
 }
 
-.video {
+.gym__video {
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -114,46 +108,54 @@
     position: unset;
     margin: 40px -5.2% 0 -5.2%;
   }
+}
 
-  .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: rgba(20, 54, 122, 0.5);
+.gym__play-button {
+  cursor: pointer;
+}
 
-    .play-button {
-      cursor: pointer;
-    }
+.gym__video-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(20, 54, 122, 0.5);
+}
 
-    .play-button, picture, img {
-      width: 100px;
-      height: 100px;
+.gym__video-overlay,
+.gym__video picture,
+.gym__video img {
+  width: 364px;
+  height: 228px;
 
-      @media (max-width: $tablet-width-only) {
-        width: 73px;
-        height: 73px;
-      }
-    }
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    width: 266px;
+    height: 167px;
   }
 
-  .overlay, picture, img {
-    width: 364px;
-    height: 228px;
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 167px;
+  }
+}
 
-    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      width: 266px;
-      height: 167px;
-    }
+.gym__play-button,
+.gym__video-overlay picture,
+.gym__video-overlay img {
+  width: 100px;
+  height: 100px;
 
-    @media (max-width: $mobile-width-only) {
-      width: 320px;
-      height: 167px;
-    }
+  @media (max-width: $tablet-width-only) {
+    width: 73px;
+    height: 73px;
   }
 }
 
 .gym__gym-pic {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-top: 40px;
+  }
+
   @media (max-width: $mobile-width-only) {
     margin: 0 -5.2%;
   }
