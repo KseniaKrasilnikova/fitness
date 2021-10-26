@@ -262,14 +262,34 @@
     </section>
     <section class="trainers">
       <div class="trainers__container container">
-      <h2>Тренеры</h2>
+        <h2>Тренеры</h2>
+        <div class="trainers__list">
+          <ul>
+            <li>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna@1x.webp 1x, img/anna@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/alex-tablet@1x.webp 1x, img/alex-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/alex-mobile@1x.webp 1x, img/alex-mobile@2x.webp 2x">
+                <!-- 1х: 260px; 2x: 520px -->
+                <source media="(min-width: 1200px)" srcset="img/anna@1x.jpg 1x, img/anna@2x.jpg 2x">
+                <!-- 1х: 268px; 2x: 536px -->
+                <source media="(min-width: 768px)" srcset="img/alex-tablet@1x.jpg 1x, img/alex-tablet@2x.jpg 2x">
+                <!-- 1х: 226px; 2x: 452px -->
+                <img src="img/alex-mobile@1x.jpg" srcset="img/alex-mobile@2x.jpg 2x" alt="Анна Павлова" width="226" height="274">
+              </picture>
+              <div class="trainers__item-mask">
+
+              </div>
+              <div class="trainers__item-sign">
+                <p>Анна Павлова</p>
+              </div>
+            </li>
+          </ul>
+        </div>
 
 
       </div>
     </section>
-
-
-
 
 
     <section class="features">features</section>

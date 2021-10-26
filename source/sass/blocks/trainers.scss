@@ -2,6 +2,10 @@
   min-height: 633px;
   background-color: #a7b1f1;
 
+  h2 {
+    margin: 0 0 50px 0;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 576px;
   }
@@ -9,11 +13,52 @@
   @media (max-width: $mobile-width-only) {
     min-height: 488px;
   }
-
-
 }
-
 
 .trainers__container {
   padding: 0;
+}
+
+.trainers__list {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    color: #FFFFFF;
+  }
+
+  li {
+    position: relative;
+    width: 260px;
+    height: 294px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.trainers__item-mask {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 21, 23, 0.6);
+}
+
+.trainers__list li:hover .trainers__item-mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainers__item-sign p {
+
 }
