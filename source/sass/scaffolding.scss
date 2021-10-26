@@ -58,9 +58,11 @@ h2 {
 .trainers {
   min-height: 633px;
   background-color: #a7b1f1;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 576px;
   }
+
   @media (max-width: $mobile-width-only) {
     min-height: 488px;
   }
@@ -68,9 +70,11 @@ h2 {
 .features {
   min-height: 664px;
   background-color: #F8F9FC;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 755px;
   }
+
   @media (max-width: $mobile-width-only) {
     min-height: 1231px;
   }
@@ -78,9 +82,11 @@ h2 {
 .promo {
   min-height: 681px;
   background-color: #a2e3e5;
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 885px;
   }
+
   @media (max-width: $mobile-width-only) {
     min-height: 1224px;
   }

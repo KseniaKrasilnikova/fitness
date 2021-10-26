@@ -112,6 +112,11 @@
 
 .gym__play-button {
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 .gym__video-overlay {
