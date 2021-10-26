@@ -1,0 +1,19 @@
+.trainers {
+  min-height: 633px;
+  background-color: #a7b1f1;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 576px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 488px;
+  }
+
+
+}
+
+
+.trainers__container {
+  padding: 0;
+}
