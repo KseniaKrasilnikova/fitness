@@ -99,6 +99,7 @@
     flex-basis: 292px;
     min-height: 292px;
     padding: 51px 44px;
+    align-items: center;
   }
 }
 
@@ -110,7 +111,7 @@
   max-width: 202px;
 
   @media (max-width: $tablet-width-only) {
-    column-gap: 33px;
+    column-gap: 31px;
   }
 
   h3 {
