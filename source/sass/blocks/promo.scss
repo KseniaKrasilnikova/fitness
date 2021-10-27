@@ -1,0 +1,117 @@
+.promo {
+  min-height: 681px;
+  background-color: #a2e3e5;
+  padding: 120px 0 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 885px;
+    padding: 104px 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 1224px;
+  }
+
+  h2 {
+    margin: 0 0 50px 0;
+    text-align: center;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      margin: 0 0 42px 0;
+    }
+  }
+}
+
+.promo__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-height: 462px;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width-only) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 703px;
+  }
+}
+
+.promo__main-offer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-basis: 560px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-basis: 462px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    flex-basis: 290px;
+  }
+}
+
+.promo__main-pic {
+  background-color: white;
+  flex-grow: 1;
+  flex-basis: 280px;
+
+  background-image: url("../img/girl@1x.jpg");
+}
+
+.promo__main-text {
+  background-color: red;
+
+  flex-grow: 1;
+  flex-basis: 280px;
+}
+
+.promo__sales {
+  background-color: #1C3374;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-basis: 560px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-direction: row;
+    flex-basis: 211px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: row;
+  }
+}
+
+.promo__offer {
+  background-color: darkseagreen;
+  width: 100%;
+  flex-basis: 211px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-basis: 324px;
+  }
+}
+
+.promo__offer--month {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-right: 30px
+  }
+}
