@@ -34,6 +34,7 @@
 
   li {
     position: relative;
+    width: 22.5%;
   }
 
   img {
@@ -76,6 +77,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
+    text-align: center;
   }
 
   p {
@@ -89,12 +91,14 @@
   }
 
   ul {
+    flex-direction: column;
     list-style: disc;
     padding-left: 31px;
     margin-top: 29px;
   }
 
   li {
+    width: auto;
     padding-bottom: 13px;
     font-size: 14px;
     line-height: 21px;
