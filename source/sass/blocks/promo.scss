@@ -68,14 +68,36 @@
 }
 
 .promo__main-pic {
-  background-color: white;
   flex-grow: 1;
   flex-basis: 280px;
 
   background-image: url("../img/girl@1x.jpg");
+  background-color: $secondaryColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/girl@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 399px;
+
+    background-image: url("../img/girl-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/girl-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: url("../img/girl-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/girl-mobile@2x.jpg");
+    }
   }
 }
 
