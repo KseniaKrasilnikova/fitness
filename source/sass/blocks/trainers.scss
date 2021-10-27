@@ -34,8 +34,6 @@
 
   li {
     position: relative;
-    width: 260px;
-    height: 294px;
   }
 
   img {
@@ -48,9 +46,9 @@
   display: none;
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(20, 21, 23, 0.6);
+  width: 260px;
+  height: 294px;
+  background-color: rgba(16, 38, 84, 0.89);
 }
 
 .trainers__list li:hover .trainers__item-mask {
@@ -59,6 +57,63 @@
   align-items: center;
 }
 
-.trainers__item-sign p {
+.trainers__list li:hover .trainers__item-sign {
+  display: none;
+}
 
+.trainers__mask-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 51px 38px 58px 40px;
+  height: 100%;
+
+  h3 {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  p {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #B6BDCC;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 31px;
+    margin-top: 29px;
+  }
+
+  li {
+    padding-bottom: 13px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.trainers__item-sign {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  p {
+    position: absolute;
+    bottom: 30px;
+    margin: 0;
+    padding: 0 55px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
