@@ -20,7 +20,7 @@
 }
 
 .trainers__list {
-  ul {
+  & > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,7 +32,7 @@
     color: #FFFFFF;
   }
 
-  li {
+  & > ul > li {
     position: relative;
     width: 22.4%;
     margin-bottom: 20px;
@@ -104,7 +104,7 @@
     color: #B6BDCC;
   }
 
-  ul {
+  & > ul {
     flex-direction: column;
     list-style: disc;
     padding-left: 31px;
