@@ -6,7 +6,7 @@ var setupViewPager = function () {
   var slides = document.querySelectorAll('.reviews__slide');
   var currentSlide = 0;
 
-  prevButton.addEventListener('click', function () {
+  nextButton.addEventListener('click', function () {
     slides[currentSlide].classList.remove('current');
     currentSlide++;
     if (currentSlide >= slides.length) {
@@ -14,7 +14,7 @@ var setupViewPager = function () {
     }
     slides[currentSlide].classList.add('current');
   });
-  nextButton.addEventListener('click', function () {
+  prevButton.addEventListener('click', function () {
     slides[currentSlide].classList.remove('current');
     currentSlide--;
     if (currentSlide < 0) {

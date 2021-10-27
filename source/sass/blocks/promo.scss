@@ -11,6 +11,7 @@
 
   @media (max-width: $mobile-width-only) {
     min-height: 1224px;
+    padding: 73px 0 0;
   }
 
   h2 {
@@ -18,7 +19,11 @@
     text-align: center;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      margin: 0 0 42px 0;
+      margin: 0 0 38px 0;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin: 0 0 41px 0;
     }
   }
 }
@@ -57,7 +62,8 @@
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
-    flex-basis: 290px;
+    flex-basis: 598px;
+    margin-bottom: 30px;
   }
 }
 
@@ -67,6 +73,10 @@
   flex-basis: 280px;
 
   background-image: url("../img/girl@1x.jpg");
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-basis: 399px;
+  }
 }
 
 .promo__main-text {
@@ -74,6 +84,10 @@
 
   flex-grow: 1;
   flex-basis: 280px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    flex-basis: 279px;
+  }
 }
 
 .promo__sales {
@@ -91,7 +105,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    flex-direction: row;
+    flex-direction: column;
+    flex-basis: 211px;
   }
 }
 
@@ -113,5 +128,10 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-right: 30px
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    margin-bottom: 30px;
   }
 }
