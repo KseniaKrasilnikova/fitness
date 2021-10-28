@@ -122,10 +122,10 @@ var setupForm = function () {
   formSubmitBtn.addEventListener('click', function (event) {
     event.preventDefault();
     if (isFormValid()) {
-      //saveFormData();
       resetForm(quickFormInputs, quickFormErrors);
-      //resetFormData();
+      resetFormData();
     } else {
+      saveFormData();
       event.preventDefault();
     }
   });
@@ -172,8 +172,6 @@ var setupForm = function () {
   formPhone.addEventListener('keydown', Mask, false);
 };
 
-var quickFormSubmitBtn = document.querySelector('.quick-form__submit');
-
 var saveFormData = function () {
   localStorage.setItem('name', document.getElementById('name').value);
   localStorage.setItem('phone', document.getElementById('phone').value);
@@ -184,10 +182,7 @@ var resetFormData = function () {
   localStorage.removeItem('phone', document.getElementById('phone').value);
 };
 
-quickFormSubmitBtn.addEventListener('submit', saveFormData, true);
-
 setupViewPager();
 jsOn();
 setupForm();
 setupSubscriptionTabs();
-
