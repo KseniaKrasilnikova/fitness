@@ -75,8 +75,6 @@
   background-color: $secondaryColor;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/girl@2x.jpg");
@@ -101,14 +99,81 @@
   }
 }
 
-.promo__main-text {
+.promo__main-content {
   background-color: red;
+  color: #FFFFFF;
 
   flex-grow: 1;
   flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 34px 45px 46px 45px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 279px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    align-items: center;
+  }
+
+  a {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: #FFFFFF;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+.promo__main-text {
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 44px;
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 57px;
+  }
+
+  p {
+    margin: 25px 0 0 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    @media (max-width: $mobile-width-only) {
+      margin: 20px 0 0 0;
+    }
   }
 }
 
