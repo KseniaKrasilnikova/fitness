@@ -47,11 +47,18 @@
   }
 
    svg {
+     stroke: #AFAFAF;
+
      @media (max-width: $mobile-width-only) {
        width: 10px;
        height: 19px;
      }
    }
+
+  &:hover svg,
+  &:focus svg {
+    stroke: $secondaryColor;
+  }
 }
 
 .reviews__page {

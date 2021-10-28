@@ -3,38 +3,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 120px;
-  margin-bottom: 217px;
   color: $secondaryColor;
+  margin: 120px 7.6% 217px;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 183px;
+    margin: 100px 5.8% 183px;
   }
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
     align-items: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 70px 0;
   }
 
-    picture, img {
-      width: 660px;
-      height: 401px;
+  picture, img {
+    width: 660px;
+    height: 401px;
 
-      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-        width: 678px;
-        height: 345px;
-      }
-
-      @media (max-width: $mobile-width-only) {
-        width: 320px;
-        height: 313px;
-      }
+    @media (max-width: $tablet-width-only) {
+      height: auto;
+      width: 100%;
     }
+  }
 }
 
 .gym__info {
@@ -47,12 +39,13 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    max-width: 511px;
+    max-width: 542px;
     text-align: center;
   }
 
   @media (max-width: $tablet-width-only) {
-    padding: 0;
+    box-sizing: border-box;
+    padding: 0 15px;
     flex-direction: column;
 
     & p:not(:first-of-type) {
@@ -95,18 +88,35 @@
   margin: 97px 0 0 39px;
   position: absolute;
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
-  }
-
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin: 83px 0 0 0;
   }
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   @media (max-width: $mobile-width-only) {
     display: block;
-    position: unset;
-    margin: 40px -5.2% 0 -5.2%;
+    position: relative;
+    width: 100%;
+    margin: 35px -5.2% 0 -5.2%;
+  }
+
+  .gym__video-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(20, 54, 122, 0.5);
+
+    @media (max-width: $mobile-width-only) {
+      height: 100%
+    }
+  }
+
+  picture {
+    display: flex;
   }
 }
 
@@ -117,14 +127,6 @@
   &:focus {
     opacity: 0.8;
   }
-}
-
-.gym__video-overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-color: rgba(20, 54, 122, 0.5);
 }
 
 .gym__video-overlay,
@@ -139,8 +141,8 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 320px;
-    height: 167px;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -157,6 +159,11 @@
 }
 
 .gym__gym-pic {
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    height: auto;
+  }
+
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     margin-top: 40px;
   }
