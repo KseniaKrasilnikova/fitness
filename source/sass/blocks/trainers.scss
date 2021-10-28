@@ -3,6 +3,17 @@
 
   h2 {
     margin: 0 7.6% 50px;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      margin: 0 5.8% 40px;
+
+      text-align: center;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      margin: 0 4.7% 42px;
+      text-align: center;
+    }
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -22,6 +33,14 @@
   width: 100%;
   padding: 0 10px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding: 0 5.8%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 4.7%;
+  }
 }
 
 .trainers__previous-btn,
@@ -52,12 +71,21 @@
 .trainers__list {
   display: flex;
   align-items: center;
-  max-width: 1160px;
+  justify-content: center;
   width: 100%;
   margin: 0 40px;
 
+  @media (min-width: $desktop-width) {
+    max-width: 1160px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    margin: 0 22px;
+    margin: 0;
+  }
+
+  picture {
+    display: flex;
+    height: 100%;
   }
 
   & > ul {
@@ -65,18 +93,55 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1160px;
     width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
 
     color: #FFFFFF;
+
+    @media (min-width: $desktop-width) {
+      max-width: 1160px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      max-width: 566px;
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      max-width: 566px;
+    }
   }
 
   & > ul > li {
+    display: none;
     position: relative;
-    width: 260px;
+    height: 100%;
+    justify-content: center;
+
+    @media (min-width: $desktop-width) {
+      width: 260px;
+
+      &:nth-child(-n+4) {
+        display: flex;
+      }
+    }
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      width: 268px;
+
+      &:nth-child(-n+2) {
+        display: flex;
+      }
+    }
+
+    @media (max-width: $mobile-width-only) {
+      width: 226px;
+
+      &:nth-child(-n+1) {
+        display: flex;
+      }
+    }
   }
 
   img {
@@ -89,10 +154,21 @@
   display: none;
   position: absolute;
   top: 0;
-  width: 260px;
-  height: 294px;
+  height: 100%;
   background-color: rgba(16, 38, 84, 0.89);
   box-shadow: 0 0 35px rgba(42, 59, 99, 0.17);
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    width: 268px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 226px;
+  }
 }
 
 .trainers__list li:hover .trainers__item-mask {
@@ -101,7 +177,7 @@
   align-items: center;
 }
 
-.trainers__list li:hover .trainers__item-sign {
+.trainers__list li:hover p {
   display: none;
 }
 
@@ -123,7 +199,7 @@
     text-align: center;
   }
 
-  p {
+  & > span {
     margin: 0;
     font-weight: normal;
     font-size: 16px;
@@ -148,19 +224,13 @@
   }
 }
 
-.trainers__item-sign {
-  position: relative;
-  display: flex;
-  justify-content: center;
-
-  p {
+.trainers__list p {
     position: absolute;
-    bottom: 30px;
+    bottom: 24px;
     margin: 0;
     padding: 0 55px;
 
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-  }
 }

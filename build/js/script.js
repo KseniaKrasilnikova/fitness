@@ -172,8 +172,6 @@ var setupForm = function () {
   formPhone.addEventListener('keydown', Mask, false);
 };
 
-var quickFormSubmitBtn = document.querySelector('.quick-form__submit');
-
 var saveFormData = function () {
   localStorage.setItem('name', document.getElementById('name').value);
   localStorage.setItem('phone', document.getElementById('phone').value);
@@ -184,11 +182,7 @@ var resetFormData = function () {
   localStorage.removeItem('phone', document.getElementById('phone').value);
 };
 
-// quickFormSubmitBtn.addEventListener('submit', saveFormData, true);
-
 setupViewPager();
 jsOn();
 setupForm();
 setupSubscriptionTabs();
-
-document.getElementById('name').value = localStorage.getItem('name');
