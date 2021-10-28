@@ -1,6 +1,5 @@
 .promo {
   min-height: 681px;
-  background-color: #a2e3e5;
   padding: 120px 0 0;
   box-sizing: border-box;
 
@@ -178,8 +177,6 @@
 }
 
 .promo__sales {
-  background-color: #1C3374;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -198,8 +195,9 @@
 }
 
 .promo__offer {
-  background-color: darkseagreen;
+  background-color: #FFFFFF;
   width: 100%;
+  min-height: 197px;
   flex-basis: 211px;
   flex-grow: 1;
 
@@ -208,7 +206,16 @@
   }
 }
 
-.promo__offer--month {
+.promo__sales-wrapper {
+  padding: 7px;
+  box-sizing: border-box;
+  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+
+}
+
+.promo__sales-month {
+  height: 100%;
+
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
   }
