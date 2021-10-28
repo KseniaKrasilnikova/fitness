@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-direction: column;
     align-items: center;
-    margin: 100px 5.8% 183px;
+    margin: 100px 5.8% 178px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -64,6 +64,10 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      margin: 7px 0 0 0;
+    }
   }
 
   p {
@@ -73,6 +77,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 150%;
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      margin: 35px 0 0 0;
+    }
 
     @media (max-width: $mobile-width-only) {
       margin: 24px 0 33px 0;
@@ -89,7 +97,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin: 83px 0 0 0;
+    margin: 78px 0 0 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -165,7 +173,7 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin-top: 40px;
+    margin-top: 43px;
   }
 
   @media (max-width: $mobile-width-only) {
