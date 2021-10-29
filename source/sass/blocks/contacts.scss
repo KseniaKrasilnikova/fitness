@@ -9,22 +9,32 @@
     flex-basis: 351px;
     display: flex;
     justify-content: center;
+    padding: 71px 0 44px;
   }
 
   @media (max-width: $mobile-width-only) {
-    flex-basis: 506px;
-    padding: 69px 0 62px;
+    flex-basis: 505px;
+    padding: 71px 0 62px;
   }
 
   h2 {
+    font-family: "Bebas Neue","Arial",sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: .03em;
+
     margin: 0 0 40px 69px;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin: 0 0 32px 0;
+      font-size: 42px;
+      line-height: 42px;
     }
 
     @media (max-width: $mobile-width-only) {
       margin: 0 0 34px 0;
+      font-size: 32px;
+      line-height: 32px;
     }
   }
 

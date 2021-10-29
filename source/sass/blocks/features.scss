@@ -1,0 +1,12 @@
+.features {
+  min-height: 664px;
+  background-color: #F8F9FC;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 755px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 1231px;
+  }
+}

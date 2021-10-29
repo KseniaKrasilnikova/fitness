@@ -10,15 +10,15 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 324px;
-    padding: 71px 0;
+    padding: 70px 0;
     display: flex;
     justify-content: center;
   }
 
   @media (max-width: $mobile-width-only) {
     justify-content: center;
-    flex-basis: 388px;
-    padding: 71px 0;
+    flex-basis: 386px;
+    padding: 70px 0;
   }
 }
 
@@ -91,11 +91,10 @@
   }
 
   label {
-    width: 190px;
-    padding-bottom: 4px;
+    width: 189px;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      padding-bottom: 4px;
+      width: 206px;
     }
 
     @media (max-width: $mobile-width-only) {
