@@ -50,21 +50,6 @@
   }
 }
 
-//.features__accent {
-//  background-color: $primaryColor;
-//  width: 240px;
-//  min-height: 307px;
-//  color: #FFFFFF;
-//
-//  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-//    width: 442px;
-//    min-height: 239px;  }
-//
-//  @media (max-width: $mobile-width-only) {
-//    width: 100%;
-//    min-height: 239px;  }
-//}
-
 .features__list {
   ul {
     background-color: #ff6b26;
@@ -88,9 +73,11 @@
     width: 341px;
 
     display: grid;
-    grid-template-columns: 138px 1fr;
+    //grid-template-columns: 138px 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
+
+
 
   h3 {
     margin: 0;
@@ -139,12 +126,25 @@
 }
 
 .features__list li:nth-child(odd) {
+  grid-template-columns: 138px 1fr;
+
   margin-right: 60px;
   padding-left: 27px;
 }
 
+.features__list li:nth-child(4n+3) {
+  padding-left: 19px;
+}
+
 .features__list li:nth-child(even) {
+  grid-template-columns: 104px 1fr;
+
   margin-left: 60px;
+}
+
+.features__list li:nth-child(4n+3),
+.features__list li:nth-child(4n) {
+  grid-template-rows: 79px 1fr 1fr;
 }
 
 .features__list li:nth-child(2n+1) {
