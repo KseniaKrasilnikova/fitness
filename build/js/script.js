@@ -1,6 +1,6 @@
 'use strict';
 
-var setupViewPager = function () {
+var setupFeedbackPager = function () {
   var prevButton = document.querySelector('.reviews__previous-btn');
   var nextButton = document.querySelector('.reviews__previous-next');
   var slides = document.querySelectorAll('.reviews__slide');
@@ -22,6 +22,64 @@ var setupViewPager = function () {
     }
     slides[currentSlide].classList.add('current');
   });
+};
+
+var setupTrainersPager = function () {
+
+  var deviceTypes = {
+    desktop: {
+      itemsPerPage: 4,
+      class: 'current-desktop'
+    },
+    tablet: {
+      itemsPerPage: 2,
+      class: 'current-tablet'
+    },
+    mobile: {
+      itemsPerPage: 1,
+      class: 'current-mobile'
+    }
+  };
+
+  var prevButton = document.querySelector('.trainers__previous-btn');
+  var nextButton = document.querySelector('.trainers__previous-next');
+  var slides = document.querySelectorAll('.trainers__list > ul > li');
+  var currentPage = 0;
+
+  nextButton.addEventListener('click', function () {
+    currentPage++;
+    if (currentPage >= slides.length) {
+      currentPage = 0;
+    }
+    selectCurrentItems(currentPage, slides, deviceTypes.desktop);
+    selectCurrentItems(currentPage, slides, deviceTypes.tablet);
+    selectCurrentItems(currentPage, slides, deviceTypes.mobile);
+  });
+  prevButton.addEventListener('click', function () {
+    currentPage--;
+    if (currentPage < 0) {
+      currentPage = slides.length - 1;
+    }
+    selectCurrentItems(currentPage, slides, deviceTypes.desktop);
+    selectCurrentItems(currentPage, slides, deviceTypes.tablet);
+    selectCurrentItems(currentPage, slides, deviceTypes.mobile);
+  });
+};
+
+
+var selectCurrentItems = function (page, slides, deviceType) {
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].classList.remove(deviceType.class);
+  }
+
+  var pagesCount = slides.length / deviceType.itemsPerPage;
+  var normalizedPage = page % pagesCount;
+  var firstItem = normalizedPage * deviceType.itemsPerPage;
+  var lastItem = firstItem + (deviceType.itemsPerPage - 1);
+  console.log('page = ' + page + ' result = ' + [firstItem, lastItem] + ' normalizedPage = ' + normalizedPage);
+  for (var slideIndex = firstItem; slideIndex <= lastItem; slideIndex++) {
+    slides[slideIndex].classList.add(deviceType.class);
+  }
 };
 
 var setupSubscriptionTabs = function () {
@@ -182,7 +240,8 @@ var resetFormData = function () {
   localStorage.removeItem('phone', document.getElementById('phone').value);
 };
 
-setupViewPager();
+setupFeedbackPager();
+setupTrainersPager();
 jsOn();
 setupForm();
 setupSubscriptionTabs();
