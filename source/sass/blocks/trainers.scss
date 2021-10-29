@@ -1,6 +1,14 @@
 .trainers {
   min-height: 513px;
 
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    min-height: 474px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 416px;
+  }
+
   h2 {
     margin: 0 7.6% 50px;
 
@@ -14,14 +22,6 @@
       margin: 0 4.7% 42px;
       text-align: center;
     }
-  }
-
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    min-height: 576px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    min-height: 488px;
   }
 }
 
