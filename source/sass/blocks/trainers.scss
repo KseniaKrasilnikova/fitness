@@ -256,4 +256,8 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 27px;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 10px;
+  }
 }

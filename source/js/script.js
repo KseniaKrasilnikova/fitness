@@ -65,7 +65,6 @@ var setupTrainersPager = function () {
   });
 };
 
-
 var selectCurrentItems = function (page, slides, deviceType) {
   for (var i = 0; i < slides.length; i++) {
     slides[i].classList.remove(deviceType.class);

@@ -73,11 +73,8 @@
     width: 341px;
 
     display: grid;
-    //grid-template-columns: 138px 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
-
-
 
   h3 {
     margin: 0;
@@ -114,7 +111,6 @@
     line-height: 21px;
     color: #2E35AC;
   }
-
 }
 
 .features__list li:first-child,
@@ -152,5 +148,4 @@
 }
 
 .features__list li:nth-child(2n+1) {
-  //padding: 0 20px 20px 0;
 }
