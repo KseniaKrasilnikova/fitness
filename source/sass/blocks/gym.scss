@@ -55,7 +55,7 @@
 
   h2 {
     margin: 0;
-    font-family: "Bebas Neue","Arial",sans-serif;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: .03em;
@@ -111,7 +111,7 @@
   position: absolute;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin: 78px 0 0 0;
+    margin: 83px 0 0 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -122,7 +122,7 @@
     display: block;
     position: relative;
     width: 100%;
-    margin: 35px -5.2% 0 -5.2%;
+    margin: 40px -5.2% 0 -5.2%;
   }
 
   .gym__video-overlay {
@@ -181,9 +181,12 @@
 }
 
 .gym__gym-pic {
+  background-color: #b6bdcc;
+  height: 401px;
+
   @media (max-width: $tablet-width-only) {
     width: 100%;
-    height: auto;
+    height: 345px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -192,5 +195,6 @@
 
   @media (max-width: $mobile-width-only) {
     margin: 0 -5.2%;
+    height: 313px;
   }
 }
