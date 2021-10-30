@@ -113,6 +113,7 @@
 
     &::placeholder {
       color: #FFFFFF;
+      opacity: 0.6;
     }
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {

@@ -98,26 +98,28 @@
       </div>
     </section>
     <section class="gym">
-      <div class="gym__info">
-        <h2>Тренажерный зал</h2>
-        <h3>Просторный зал площадью 900 кв/м</h3>
-        <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
-          зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
-        <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
-          несколько оборудованных залов для различных видов групповых занятий.</p>
-      </div>
-      <div class="gym__gym-pic">
-        <picture>
-          <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym@1x.webp 1x, img/gym@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
-          <!-- 1х: 660px; 2x: 1320px -->
-          <source media="(min-width: 1200px)" srcset="img/gym@1x.jpg 1x, img/gym@2x.jpg 2x">
-          <!-- 1х: 678px; 2x: 1356px -->
-          <source media="(min-width: 768px)" srcset="img/gym-tablet@1x.jpg 1x, img/gym-tablet@2x.jpg 2x">
-          <!-- 1х: 320px; 2x: 640px -->
-          <img src="img/gym-mobile@1x.jpg" srcset="img/gym-mobile@2x.jpg 2x" alt="Тренажерный зал" width="320" height="313">
-        </picture>
+      <div class="gym__info-wrapper">
+        <div class="gym__info">
+          <h2>Тренажерный зал</h2>
+          <h3>Просторный зал площадью 900 кв/м</h3>
+          <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный
+            зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+          <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+            несколько оборудованных залов для различных видов групповых занятий.</p>
+        </div>
+        <div class="gym__gym-pic">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/gym@1x.webp 1x, img/gym@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <source media="(min-width: 1200px)" srcset="img/gym@1x.jpg 1x, img/gym@2x.jpg 2x">
+            <!-- 1х: 678px; 2x: 1356px -->
+            <source media="(min-width: 768px)" srcset="img/gym-tablet@1x.jpg 1x, img/gym-tablet@2x.jpg 2x">
+            <!-- 1х: 320px; 2x: 640px -->
+            <img src="img/gym-mobile@1x.jpg" srcset="img/gym-mobile@2x.jpg 2x" alt="Тренажерный зал" width="320" height="313">
+          </picture>
+        </div>
       </div>
       <div class="gym__video">
         <div class="gym__video-overlay">
@@ -664,7 +666,6 @@
         </div>
       </div>
     </section>
-
     <section class="reviews container">
       <h2>Отзывы</h2>
       <div class="reviews__pager">
@@ -674,7 +675,6 @@
             <use xlink:href="#slider-arrow"></use>
           </svg>
         </div>
-
         <div class="reviews__page">
           <div class="reviews__slide current">
             <div class="reviews__slide-pic">
@@ -697,10 +697,9 @@
               </picture>
             </div>
             <h3>Сергей Валерьевич</h3>
-            <p>«Очень крутое заведение»</p>
+            <p>«Очень крутое заведение! Мне все понравилось, особенно полотенца. Рекомендую!»</p>
           </div>
         </div>
-
         <div class="reviews__previous-next no-js">
           <span class="visually-hidden">Следующий отзыв</span>
           <svg width="18" height="34" xmlns="http://www.w3.org/2000/svg">
@@ -731,7 +730,6 @@
           </form>
         </div>
       </section>
-
       <section class="contacts">
         <div class="container contacts__content">
           <h2 class="section-title">Контакты</h2>
@@ -746,7 +744,6 @@
                 <p>Пн-Вс: с 8:00 до 22:00</p>
               </div>
             </div>
-
             <div class="contacts__divider">
               <div>
                 <h3>Телефон:</h3>
