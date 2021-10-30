@@ -125,14 +125,16 @@
       <div class="gym__video">
         <div class="gym__video-overlay">
           <div class="gym__play-button">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-btn@1x.webp 1x, img/video-btn@2x.webp 2x">
-              <source type="image/webp" srcset="img/video-btn-tablet@1x.webp 1x, img/video-btn-tablet@2x.webp 2x">
-              <!-- 1х: 100px; 2x: 200px -->
-              <source media="(min-width: 1200px)" srcset="img/video-btn@1x.png 1x, img/video-btn@2x.png 2x">
-              <!-- 1х: 73px; 2x: 146px -->
-              <img src="img/video-btn-tablet@1x.png" srcset="img/video-btn-tablet@2x.png 2x" alt="Смотреть видео" width="73" height="73">
-            </picture>
+            <button>
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-btn@1x.webp 1x, img/video-btn@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-btn-tablet@1x.webp 1x, img/video-btn-tablet@2x.webp 2x">
+                <!-- 1х: 100px; 2x: 200px -->
+                <source media="(min-width: 1200px)" srcset="img/video-btn@1x.png 1x, img/video-btn@2x.png 2x">
+                <!-- 1х: 73px; 2x: 146px -->
+                <img src="img/video-btn-tablet@1x.png" srcset="img/video-btn-tablet@2x.png 2x" alt="Смотреть видео" width="73" height="73">
+              </picture>
+            </button>
           </div>
         </div>
         <picture>
@@ -152,9 +154,15 @@
       <div class="subscriptions__container">
         <h2>Абонементы</h2>
         <ul>
-          <li id="first-tab" class="active"><button>1 месяц</button></li>
-          <li id="second-tab"><button>6 месяцев</button></li>
-          <li id="third-tab"><button>12 месяцев</button></li>
+          <li id="first-tab" class="active">
+            <button>1 месяц</button>
+          </li>
+          <li id="second-tab">
+            <button>6 месяцев</button>
+          </li>
+          <li id="third-tab">
+            <button>12 месяцев</button>
+          </li>
         </ul>
         <div class="subscriptions__box">
           <div class="subscriptions__wrapper current">

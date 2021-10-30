@@ -62,6 +62,10 @@
           bottom: -3px;
         }
       }
+
+      & button {
+        color: $secondaryColor;
+      }
     }
 
     button {
@@ -74,8 +78,18 @@
       font-style: normal;
       font-weight: normal;
       font-size: 20px;
-      line-height: 150%;
+      line-height: 30px;
       color: rgba(16, 38, 84, 0.5);
+
+      @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+        font-size: 18px;
+        line-height: 27px;
+      }
+
+      @media (max-width: $mobile-width-only) {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     &:not(:first-child) {
