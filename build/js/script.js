@@ -25,7 +25,6 @@ var setupFeedbackPager = function () {
 };
 
 var setupTrainersPager = function () {
-
   var deviceTypes = {
     desktop: {
       itemsPerPage: 4,
@@ -66,7 +65,6 @@ var setupTrainersPager = function () {
   });
 };
 
-
 var selectCurrentItems = function (page, slides, deviceType) {
   for (var i = 0; i < slides.length; i++) {
     slides[i].classList.remove(deviceType.class);
@@ -76,7 +74,6 @@ var selectCurrentItems = function (page, slides, deviceType) {
   var normalizedPage = page % pagesCount;
   var firstItem = normalizedPage * deviceType.itemsPerPage;
   var lastItem = firstItem + (deviceType.itemsPerPage - 1);
-  console.log('page = ' + page + ' result = ' + [firstItem, lastItem] + ' normalizedPage = ' + normalizedPage);
   for (var slideIndex = firstItem; slideIndex <= lastItem; slideIndex++) {
     slides[slideIndex].classList.add(deviceType.class);
   }
