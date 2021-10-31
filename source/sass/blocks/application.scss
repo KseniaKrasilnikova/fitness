@@ -1,10 +1,11 @@
 .application {
   min-height: 620px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 392px;
   }
+
   @media (max-width: $mobile-width-only) {
     min-height: 654px;
   }
@@ -78,10 +79,10 @@
   justify-content: space-between;
   flex-grow: 1;
   padding: 88px 76px;
-  color: #FFFFFF;
+  color: #ffffff;
 
   box-sizing: border-box;
-  background-color: #ED0233;
+  background-color: #ed0233;
 
   @media (min-width: $desktop-width) {
     flex-basis: 500px;
@@ -117,7 +118,7 @@
   h3 {
     width: min-content;
     margin: 0;
-    font-family: "Bebas Neue", "Arial", sans-serif;;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 90px;
     line-height: 90px;
     letter-spacing: 0.03em;
@@ -239,7 +240,7 @@
     position: absolute;
     content: "";
     top: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 1px;
     width: 100%;
 
@@ -284,7 +285,7 @@
   text-transform: uppercase;
 
   cursor: pointer;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 
   @media (max-width: $tablet-width-only) {
     width: 202px;
@@ -298,12 +299,9 @@
     margin: 29px 0 47px;
   }
 
-  &  {
-    &:hover,
-    &:focus {
-      color: $secondaryColor;
-      background-color: #FFFFFF;
-    }
+  &:hover,
+  &:focus {
+    color: $secondaryColor;
+    background-color: #ffffff;
   }
 }
-

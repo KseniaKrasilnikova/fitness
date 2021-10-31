@@ -16,10 +16,10 @@
   h2 {
     margin: 0 0 50px 0;
     text-align: center;
-    font-family: "Bebas Neue","Arial",sans-serif;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin: 0 0 38px 0;
@@ -107,8 +107,8 @@
 }
 
 .promo__main-content {
-  background-color: red;
-  color: #FFFFFF;
+  background-color: #ff0000;
+  color: #ffffff;
 
   flex-grow: 1;
   flex-basis: 280px;
@@ -130,10 +130,10 @@
   a {
     font-size: 14px;
     line-height: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    &:after {
-      background-color: #FFFFFF;
+    &::after {
+      background-color: #ffffff;
     }
   }
 }
@@ -145,7 +145,7 @@
   text-transform: uppercase;
 
 
-  &:after {
+  &::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -216,7 +216,7 @@
   box-sizing: border-box;
   padding: 14px 28px 29px 28px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   min-height: 197px;
   flex-basis: 211px;
@@ -237,7 +237,7 @@
     line-height: 14px;
     color: $primaryColor;
 
-    &:after {
+    &::after {
       color: $primaryColor;
     }
   }
@@ -246,7 +246,7 @@
 .promo__sales-wrapper {
   padding: 7px;
   box-sizing: border-box;
-  background: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  background: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   width: 100%;
 }
 
@@ -271,7 +271,7 @@
   color: $primaryColor;
 
   @media (max-width: $mobile-width-only) {
-text-align: center;
+    text-align: center;
   }
 
   h3 {

@@ -17,10 +17,10 @@
   h2 {
     align-self: center;
     margin: 0 0 50px;
-    font-family: "Bebas Neue","Arial",sans-serif;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
 
     @media (max-width: $tablet-width-only) {
       margin: 0 0 40px;
@@ -67,14 +67,14 @@
     padding: 0;
   }
 
-   svg {
-     stroke: #AFAFAF;
+  svg {
+    stroke: #afafaf;
 
-     @media (max-width: $mobile-width-only) {
-       width: 10px;
-       height: 19px;
-     }
-   }
+    @media (max-width: $mobile-width-only) {
+      width: 10px;
+      height: 19px;
+    }
+  }
 
   &:hover svg,
   &:focus svg {
@@ -108,7 +108,7 @@
   align-self: start;
   grid-template-columns: repeat(4, 1fr);
 
-  color: #FFFFFF;
+  color: #ffffff;
   box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {

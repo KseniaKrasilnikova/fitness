@@ -5,7 +5,7 @@
   padding: 63px 0 62px;
   box-sizing: border-box;
 
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: $secondaryColor;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -50,7 +50,7 @@
     letter-spacing: 0.03em;
     text-transform: lowercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
 
     @media (min-width: $desktop-width) {
       margin: 0 0 0 52px;
@@ -106,13 +106,13 @@
   input {
     padding: 7px 7px 7px 0;
 
-    color: #fff;
+    color: #ffffff;
     background-color: $secondaryColor;
     border: 1px solid $secondaryColor;
-    border-bottom: 1px solid #74819C;
+    border-bottom: 1px solid #74819c;
 
     &::placeholder {
-      color: #FFFFFF;
+      color: #ffffff;
       opacity: 0.6;
     }
 

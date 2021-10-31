@@ -11,10 +11,10 @@
 
   h2 {
     margin: 0 7.6% 50px;
-    font-family: "Bebas Neue","Arial",sans-serif;
+    font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin: 0 5.8% 40px;
@@ -72,7 +72,7 @@
   }
 
   svg {
-    stroke: #AFAFAF;
+    stroke: #afafaf;
 
     @media (max-width: $mobile-width-only) {
       width: 10px;
@@ -114,7 +114,7 @@
     padding: 0;
     margin: 0;
 
-    color: #FFFFFF;
+    color: #ffffff;
 
     @media (min-width: $desktop-width) {
       max-width: 1160px;
@@ -236,7 +236,7 @@
     line-height: 24px;
     text-align: center;
 
-    color: #B6BDCC;
+    color: #b6bdcc;
   }
 
   & > ul {
@@ -255,14 +255,14 @@
 }
 
 .trainers__list p {
-    position: absolute;
-    bottom: 24px;
-    margin: 0;
-    padding: 0 55px;
+  position: absolute;
+  bottom: 24px;
+  margin: 0;
+  padding: 0 55px;
 
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 27px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
 
   @media (max-width: $mobile-width-only) {
     padding: 0 10px;

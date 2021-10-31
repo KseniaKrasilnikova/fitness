@@ -5,15 +5,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: white;
+  color: #ffffff;
 
-    @media (min-width: $desktop-width) {
-      background-image: url("../img/bg-gradient@1x.png");
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-gradient@1x.png");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-gradient@2x.png");
-      }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-gradient@2x.png");
     }
+  }
 
   @media (max-width: $tablet-width-only) {
     min-height: 555px;
@@ -167,7 +167,7 @@
   font-size: 12px;
   line-height: 14.06px;
   letter-spacing: 0.03em;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 
   border: 4px solid #ffffff;
@@ -176,7 +176,7 @@
   &:focus {
     color: $secondaryColor;
     border: 4px solid #ffffff;
-    background-color: white;
+    background-color: #ffffff;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -209,7 +209,8 @@
 .intro__pic img {
   @media (min-width: $desktop-width) {
     width: 500px;
-    height: auto;  }
+    height: auto;
+  }
 }
 
 .intro__socials {
@@ -247,7 +248,7 @@
   text-align: right;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   &:hover,
   &:focus {

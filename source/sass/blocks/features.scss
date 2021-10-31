@@ -1,6 +1,6 @@
 .features {
   min-height: 664px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 755px;
@@ -16,7 +16,7 @@
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
-    letter-spacing: .03em;
+    letter-spacing: 0.03em;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 65px;
@@ -88,7 +88,6 @@
   }
 
   .features__list-item > div {
-
     @media (min-width: $desktop-width) {
       grid-template-rows: minmax(31px, 1fr) minmax(25px, 1fr) 27px;
     }
@@ -127,14 +126,13 @@
       font-size: 71px;
       line-height: 53px;
 
-      background: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
+      background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
       color: transparent;
       -webkit-background-clip: text;
 
       @media (max-width: $tablet-width-only) {
         font-size: 58px;
       }
-
     }
 
     h4 {
@@ -190,7 +188,7 @@
       font-weight: normal;
       font-size: 14px;
       line-height: 21px;
-      color: #2E35AC;
+      color: #2e35ac;
     }
   }
 
@@ -262,8 +260,8 @@
     grid-row-start: 1;
     grid-row-end: 3;
 
-    background: #1C3374;
-    color: #FFFFFF;
+    background: #1c3374;
+    color: #ffffff;
     text-align: center;
 
     display: flex;

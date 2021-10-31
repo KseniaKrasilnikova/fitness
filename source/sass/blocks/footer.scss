@@ -71,13 +71,14 @@
   }
 
   & a {
-    font-family: "Roboto Condensed", "Arial", sans-serif;  font-style: normal;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     display: flex;
 
-    color: #FFFFFF;
+    color: #ffffff;
 
     &:focus,
     &:hover {
@@ -126,7 +127,7 @@
     height: 25px;
     padding-bottom: 5px;
 
-    @media (max-width: $mobile-width-only){
+    @media (max-width: $mobile-width-only) {
       width: 32px;
       height: 27px;
     }
@@ -141,13 +142,13 @@
       padding: 0 21px 5px;
     }
 
-    @media (max-width: $mobile-width-only){
+    @media (max-width: $mobile-width-only) {
       padding: 0 32px 5px;
     }
   }
 
   & a {
-    fill: #FFFFFF;
+    fill: #ffffff;
 
     &:focus,
     &:hover {
