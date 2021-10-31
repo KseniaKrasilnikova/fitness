@@ -231,7 +231,9 @@
 .subscriptions__item {
   display: flex;
   flex-direction: column;
+  position: relative;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   background-color: #ffffff;
 
@@ -304,36 +306,41 @@
   }
 }
 
-.subscriptions__price::before {
+.subscriptions__price-shadow {
   position: absolute;
-  z-index: -1;
-  bottom: -5px;
-  left: -16px;
+  margin-bottom: 22px;
 
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 100px;
-  line-height: 150px;
-  text-align: center;
+  span {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
 
-  color: #e8e8e8;
-  opacity: 0.48;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 80px;
-    line-height: 120px;
+    color: #e8e8e8;
+    opacity: 0.48;
   }
 }
 
-.subscriptions__price--coach::before {
-  content: "5000";
-}
-
-.subscriptions__price--day::before {
-  content: "1700";
-}
-
-.subscriptions__price--full-day::before {
-  content: "2700";
-}
+//.subscriptions__price::before {
+//  position: absolute;
+//  z-index: -1;
+//  bottom: -5px;
+//  left: -16px;
+//
+//  font-family: "Roboto Condensed", "Arial", sans-serif;
+//  font-style: normal;
+//  font-weight: bold;
+//  font-size: 100px;
+//  line-height: 150px;
+//  text-align: center;
+//
+//  color: #e8e8e8;
+//  opacity: 0.48;
+//
+//  @media (max-width: $mobile-width-only) {
+//    font-size: 80px;
+//    line-height: 120px;
+//  }
+//}

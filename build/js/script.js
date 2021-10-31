@@ -83,7 +83,7 @@ var setupSubscriptionTabs = function () {
   var firstTab = document.getElementById('first-tab');
   var secondTab = document.getElementById('second-tab');
   var thirdTab = document.getElementById('third-tab');
-  var tabs = document.querySelectorAll('.subscriptions li');
+  var tabs = document.querySelectorAll('.subscriptions__btn');
   var subscriptions = document.querySelectorAll('.subscriptions__wrapper');
   var currentTab = 0;
 
