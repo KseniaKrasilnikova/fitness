@@ -4,6 +4,9 @@ var setupFeedbackPager = function () {
   var prevButton = document.querySelector('.reviews__previous-btn');
   var nextButton = document.querySelector('.reviews__previous-next');
   var slides = document.querySelectorAll('.reviews__slide');
+  if (prevButton === null || nextButton === null) {
+    return;
+  }
   var currentSlide = 0;
 
   nextButton.addEventListener('click', function () {
@@ -44,6 +47,10 @@ var setupTrainersPager = function () {
   var nextButton = document.querySelector('.trainers__previous-next');
   var slides = document.querySelectorAll('.trainers__list > ul > li');
   var currentPage = 0;
+
+  if (prevButton === null || nextButton === null) {
+    return;
+  }
 
   nextButton.addEventListener('click', function () {
     currentPage++;
@@ -87,6 +94,10 @@ var setupSubscriptionTabs = function () {
   var subscriptions = document.querySelectorAll('.subscriptions__wrapper');
   var currentTab = 0;
 
+  if (firstTab === null || secondTab === null || thirdTab === null) {
+    return;
+  }
+
   firstTab.addEventListener('click', function () {
     onTabClicked(0);
   });
@@ -127,6 +138,9 @@ var setupForm = function () {
   var nameError = document.getElementById('name-error');
   var formSubmitBtn = document.getElementById('form-submit');
 
+  if (formName === null || formPhone === null || phoneError === null || nameError === null) {
+    return;
+  }
 
   var validateName = function (inputElement, errorElement) {
     var nameIsValid = /^[a-zA-ZЁёа-яА-Я ]{2,30}$/.test(inputElement.value);
