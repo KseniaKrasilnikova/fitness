@@ -35,8 +35,8 @@
     font-size: 14px;
     line-height: 16px;
   }
+}
 
-  input.form__input-invalid {
-    border: 1px solid #ff6b26;
-  }
+.form__required .form__input-invalid {
+  border: 1px solid #ff6b26;
 }
