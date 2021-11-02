@@ -53,14 +53,15 @@
     }
   }
 
-  p {
+  p,
+  .contacts__link {
     margin: 0;
-
     font-family: "Roboto Condensed", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
+    color: $secondaryColor;
 
     @media (max-width: $tablet-width-only) {
       font-size: 18px;
@@ -71,20 +72,22 @@
 
 .contacts__columns {
   position: relative;
+  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     margin-left: 69px;
-  }
-
-  @media (min-width: $tablet-width) {
-    column-count: 2;
-    min-width: 450px;
+    min-width: 403px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    min-width: 515px;
+    min-width: 456px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
   }
 
   p {
@@ -106,6 +109,18 @@
   }
 }
 
+.contacts__block {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 114px;
+
+  @media (max-width: $mobile-width-only) {
+    min-height: 143px;
+  }
+}
+
 .contacts__columns-section {
   padding-bottom: 20px;
 
@@ -114,7 +129,11 @@
   }
 }
 
-.contacts__divider::before {
+.contacts__block--right {
+  position: relative;
+}
+
+.contacts__block--right::before {
   position: absolute;
   content: "";
   background-color: $secondaryColor;
@@ -126,7 +145,10 @@
   }
 }
 
-.contacts__divider div {
+.contacts__block--right div {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $desktop-width) {
     margin-left: 60px;
   }
@@ -139,8 +161,10 @@
 .contacts__content {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     max-width: 502px;
+    margin-left: 0;
   }
 }
