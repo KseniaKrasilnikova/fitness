@@ -1,8 +1,11 @@
 .gym {
-  position: relative;
   color: $secondaryColor;
   margin-top: 120px;
   margin-bottom: 217px;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    position: relative;
+  }
 
   @media (max-width: $mobile-width-only) {
     display: flex;
@@ -15,6 +18,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+    @media (min-width: $desktop-width) {
+      position: relative;
+    }
+
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       flex-direction: column;
       align-items: center;
@@ -23,6 +30,7 @@
     @media (max-width: $mobile-width-only) {
       flex-direction: column;
       align-items: center;
+      width: 100%;
     }
   }
 
@@ -142,9 +150,9 @@
   width: 100%;
 
   @media (min-width: $desktop-width) {
-    bottom: -97px;
-    margin-left: -45px;
-    max-width: 1327px;
+    bottom: -91px;
+    margin-left: -35px;
+    max-width: 1305px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {

@@ -1,0 +1,13 @@
+.main {
+  @media (min-width: $desktop-width) {
+    margin-top: -56px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin-top: -65px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: -41px;
+  }
+}
