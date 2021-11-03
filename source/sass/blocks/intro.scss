@@ -39,10 +39,10 @@
   flex-direction: row;
   flex-wrap: nowrap;
   padding-top: 52px;
+  justify-content: center;
 
   @media (max-width: $tablet-width-only) {
     padding-top: 82px;
-    max-width: 680px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {

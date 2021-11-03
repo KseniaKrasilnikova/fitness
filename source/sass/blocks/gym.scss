@@ -1,7 +1,8 @@
 .gym {
   position: relative;
   color: $secondaryColor;
-  margin: 120px 7.6% 217px;
+  margin-top: 120px;
+  margin-bottom: 217px;
 
   @media (max-width: $mobile-width-only) {
     display: flex;
@@ -26,11 +27,14 @@
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin: 100px 5.8% 184px;
+    margin-top: 100px;
+    margin-bottom: 184px;
   }
 
   @media (max-width: $mobile-width-only) {
-    margin: 70px 0;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 0;
   }
 
   picture,
@@ -116,6 +120,10 @@
     font-size: 16px;
     line-height: 150%;
 
+    @media (min-width: $desktop-width) {
+      max-width: 355px;
+    }
+
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
       margin: 35px 0 0 0;
     }
@@ -135,11 +143,13 @@
 
   @media (min-width: $desktop-width) {
     bottom: -97px;
-    margin-left: 39px;
+    margin-left: -45px;
+    max-width: 1327px;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     bottom: -83px;
+    margin-left: -45px;
   }
 
   @media (max-width: $mobile-width-only) {

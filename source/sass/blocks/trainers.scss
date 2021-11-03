@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 474px;
+    display: flex;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -10,21 +11,21 @@
   }
 
   h2 {
-    margin: 0 7.6% 50px;
+    margin: 0 0 50px;
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
 
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      margin: 0 5.8% 40px;
+      margin: 0 0 40px;
       text-align: center;
       font-size: 42px;
       line-height: 42px;
     }
 
     @media (max-width: $mobile-width-only) {
-      margin: 0 4.7% 42px;
+      margin: 0 0 42px;
       text-align: center;
       font-size: 32px;
       line-height: 32px;
@@ -38,16 +39,7 @@
   align-items: center;
   align-self: center;
   width: 100%;
-  padding: 0 10px;
   box-sizing: border-box;
-
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding: 0 5.8%;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    padding: 0 4.7%;
-  }
 }
 
 .trainers__previous-btn,
@@ -92,7 +84,7 @@
   margin: 0 40px;
 
   @media (min-width: $desktop-width) {
-    max-width: 1160px;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width-only) {
