@@ -132,25 +132,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0;
+  padding: 120px 0 110px;
   max-width: 1162px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding: 100px 0;
+    padding: 100px 0 90px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 70px 0;
+    padding: 70px 0 60px;
     max-width: 290px;
   }
 }
 
 .subscriptions__list {
   z-index: 2;
-
   width: 100%;
-  margin-top: 22px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 22px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    margin: 0;
+  }
 }
 
 .subscriptions__box {
@@ -159,9 +165,9 @@
   &.current {
     display: grid;
   }
+
   justify-content: space-between;
   width: 100%;
-  //margin-top: 22px;
   grid-template-columns: repeat(3, 1fr);
 
   @media (min-width: $desktop-width) {
@@ -172,21 +178,21 @@
     justify-items: center;
     margin-top: 28px;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 30px;
   }
 
   @media (max-width: $mobile-width-only) {
     margin-top: 18px;
-    grid-row-gap: 35px;
+    grid-row-gap: 25px;
   }
 }
 
 .subscriptions__wrapper {
-  //display: none
   display: block;
   min-width: 220px;
   padding: 7px;
   box-sizing: border-box;
+  margin-bottom: 10px;
   background-color: #ffffff;
 
   @media (max-width: $tablet-width-only) {
@@ -197,10 +203,6 @@
   @media (max-width: $mobile-width-only) {
     max-width: 428px;
   }
-
-  //&.current {
-  //  display: block;
-  //}
 
   a {
     display: flex;
