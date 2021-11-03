@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-height: 885px;
-    padding: 105px 0 0;
+    padding: 103px 0 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -144,6 +144,17 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding-top: 49px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 20px;
+  }
 
   &::after {
     position: absolute;
