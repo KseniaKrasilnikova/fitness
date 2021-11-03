@@ -118,14 +118,6 @@ var setupSubscriptionTabs = function () {
     subscriptions[currentTab].classList.remove('current');
     currentTab = selectedTab;
     subscriptions[selectedTab].classList.add('current');
-
-    // for (var i = 0; i < subscriptions.length; i++) {
-    //   subscriptions[i].classList.remove('active');
-    // }
-    // currentTab = selectedTab;
-    // for (var k = 3 * currentTab; k <= 3 * currentTab + 2; k++) {
-    //   subscriptions[k].classList.add('current');
-    // }
   };
 };
 
