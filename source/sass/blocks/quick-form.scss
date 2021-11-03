@@ -2,17 +2,18 @@
   display: flex;
   flex-grow: 1;
   flex-basis: 683px;
-  padding: 63px 0 62px;
+  padding: 63px 169px 70px 0;
   box-sizing: border-box;
+  justify-content: flex-end;
 
   color: #ffffff;
   background-color: $secondaryColor;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     flex-basis: 324px;
-    padding: 70px 0;
+    padding: 70px 163px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -43,6 +44,7 @@
 
   h3 {
     width: 100%;
+    margin: 0;
 
     font-family: "Bebas Neue", "Arial", sans-serif;
     font-size: 49px;
@@ -52,19 +54,13 @@
 
     color: #ffffff;
 
-    @media (min-width: $desktop-width) {
-      margin: 0 0 0 52px;
-    }
-
     @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-      margin: 0;
       font-size: 42px;
       line-height: 42px;
     }
 
     @media (max-width: $mobile-width-only) {
       min-width: 290px;
-      margin: 0;
       font-size: 32px;
       line-height: 32px;
     }
@@ -77,17 +73,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin-left: 52px;
   width: 100%;
+  margin: 0;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    margin: 0;
     width: 470px;
   }
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
-    margin: 0;
   }
 
   label {
@@ -127,11 +121,7 @@
 }
 
 .quick-form__submit {
-  margin-left: 52px;
-
-  @media (max-width: $tablet-width-only) {
-    margin: 0;
-  }
+  margin: 0;
 
   input {
     cursor: pointer;
