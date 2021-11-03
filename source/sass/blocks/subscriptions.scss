@@ -146,12 +146,22 @@
   }
 }
 
-.subscriptions__box {
+.subscriptions__list {
   z-index: 2;
-  justify-content: space-between;
+
   width: 100%;
   margin-top: 22px;
-  display: grid;
+}
+
+.subscriptions__box {
+  display: none;
+
+  &.current {
+    display: grid;
+  }
+  justify-content: space-between;
+  width: 100%;
+  //margin-top: 22px;
   grid-template-columns: repeat(3, 1fr);
 
   @media (min-width: $desktop-width) {
@@ -172,7 +182,8 @@
 }
 
 .subscriptions__wrapper {
-  display: none;
+  //display: none
+  display: block;
   min-width: 220px;
   padding: 7px;
   box-sizing: border-box;
@@ -187,9 +198,9 @@
     max-width: 428px;
   }
 
-  &.current {
-    display: block;
-  }
+  //&.current {
+  //  display: block;
+  //}
 
   a {
     display: flex;

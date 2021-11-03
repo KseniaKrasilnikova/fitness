@@ -91,7 +91,7 @@ var setupSubscriptionTabs = function () {
   var secondTab = document.getElementById('second-tab');
   var thirdTab = document.getElementById('third-tab');
   var tabs = document.querySelectorAll('.subscriptions__btn');
-  var subscriptions = document.querySelectorAll('.subscriptions__wrapper');
+  var subscriptions = document.querySelectorAll('.subscriptions__box');
   var currentTab = 0;
 
   if (firstTab === null || secondTab === null || thirdTab === null) {
@@ -114,13 +114,18 @@ var setupSubscriptionTabs = function () {
     }
     tabs[currentTab].classList.remove('active');
     tabs[selectedTab].classList.add('active');
-    for (var i = 0; i < subscriptions.length; i++) {
-      subscriptions[i].classList.remove('current');
-    }
+
+    subscriptions[currentTab].classList.remove('current');
     currentTab = selectedTab;
-    for (var k = 3 * currentTab; k <= 3 * currentTab + 2; k++) {
-      subscriptions[k].classList.add('current');
-    }
+    subscriptions[selectedTab].classList.add('current');
+
+    // for (var i = 0; i < subscriptions.length; i++) {
+    //   subscriptions[i].classList.remove('active');
+    // }
+    // currentTab = selectedTab;
+    // for (var k = 3 * currentTab; k <= 3 * currentTab + 2; k++) {
+    //   subscriptions[k].classList.add('current');
+    // }
   };
 };
 
